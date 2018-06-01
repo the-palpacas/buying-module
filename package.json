@@ -1,20 +1,22 @@
 {
   "name": "buying-module-libby",
   "version": "1.0.0",
-  "description": "",
+  "description": "Display product details and buying experience",
   "author": "Libby Li",
-  "license": "ISC",
+  "license": "",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
-    "react-dev": "webpack -d --watch"
+    "react-dev": "webpack -d --watch",
+    "start": "nodemon server/server.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mysql": "^2.15.0",
+    "nodemon": "^1.17.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
