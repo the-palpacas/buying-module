@@ -1,4 +1,4 @@
-# Project Name
+# Petsy - Buying Module
 
 > Project description
 
