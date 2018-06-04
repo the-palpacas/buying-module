@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/petsy');
 
 const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => console.log('database connected!'));
+db.on('error', console.error.bind(console, 'Connection error:'));
+db.once('open', () => console.log('Database connected!'));
 
 const detailsSchema = mongoose.Schema({
   id: Number,
