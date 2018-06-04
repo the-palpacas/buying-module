@@ -18,6 +18,13 @@ app.use(middleware(compiler, {
 app.listen(8000, () => console.log('Buying module listening on port 8000!'));
 
 app.get('/productID/details', (req, res) => {
-  res.status(200).send();
+  db.retrieve(id, (err, result) => {
+    if (err) {
+      res.sendStatus(500);
+      throw err;
+    } else {
+      res.send(result);
+    }
+  });
 });
 

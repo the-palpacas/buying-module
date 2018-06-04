@@ -30,3 +30,16 @@ const detailsSchema = mongoose.Schema({
 const Product = mongoose.model('Product', detailsSchema);
 
 Product.insertMany(data);
+
+const retrieve = (callback) => {
+  Product.find({}, (err, docs) => {
+    if (err) {
+      callback(err, null);
+    }
+    callback(null, docs);
+  });
+};
+
+module.exports = {
+  retrieve,
+};
