@@ -12,13 +12,13 @@ app.use('/:id', express.static(path.resolve(__dirname, './../public/dist')));
 
 app.listen(8000, () => console.log('Buying module listening on port 8000!'));
 
-app.get('/details', (req, res) => {
-  db.retrieve(req.params.productId, (err, result) => {
+app.get('/:id', (req, res) => {
+  db.retrieve(req.params.id, (err, result) => {
     if (err) {
       res.sendStatus(500);
       throw err;
     } else {
-      res.send(result);
+      res.json(result);
     }
   });
 });
