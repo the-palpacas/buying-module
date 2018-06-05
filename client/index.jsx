@@ -54,11 +54,23 @@ class BuyingModule extends React.Component {
   }
 
   render() {
+    let quantityArray = [];
+    for (let i = 0; i < this.state.quantity; i += 1) {
+      quantityArray.push(i);
+    }
+
     return (
       <div>
         <h1>{this.state.name}</h1>
         <h2>${this.state.options.price[0]}+</h2>
         <div>{this.state.options.name}</div>
+        <select>{this.state.options.optionName.map(option =>
+          <option value={option} key={option}>{option}</option>)}
+        </select>
+        <div>Quantity</div>
+        <select>{quantityArray.map(number => 
+          <option value={number} key={number}>{number}</option>)}
+        </select>
       </div>
     );
   }
