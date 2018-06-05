@@ -11,6 +11,17 @@ class BuyingModule extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.getProductData();
+  }
+
+  getProductData() {
+    const url = window.location.pathname;
+    axios.get(`${url}details`)
+      .then(response => console.log('Product Data: ', response.data))
+      .catch(error => console.error('Error in getting product data: ', error));
+  }
+
   render() {
     return (
       <div>
