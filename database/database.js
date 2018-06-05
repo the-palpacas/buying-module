@@ -4,12 +4,8 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/petsy');
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => console.log('database connected!'));
-
 const detailsSchema = mongoose.Schema({
-  id: Number,
+  id: { type: Number, unique: true },
   name: String,
   freeShipping: Boolean,
   options: {
@@ -29,4 +25,31 @@ const detailsSchema = mongoose.Schema({
 
 const Product = mongoose.model('Product', detailsSchema);
 
-Product.insertMany(data);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'Connection error:'));
+db.once('open', () => {
+  console.log('Database connected!');
+  Product.on('index', (err) => {
+    if (err) {
+      console.error('error while waiting for index: ', err);
+    }
+    Product.insertMany(data, (error) => {
+      if (error) {
+        console.error('error inserting data: ', error);
+      }
+    });
+  });
+});
+
+const retrieve = (id, callback) => {
+  Product.find({ id: id }, (err, docs) => {
+    if (err) {
+      callback(err, null);
+    }
+    callback(null, docs);
+  });
+};
+
+module.exports = {
+  retrieve,
+};
