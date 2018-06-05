@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends React.Component {
+const axios = require('axios');
+
+class BuyingModule extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+
+    };
   }
 
   render() {
@@ -15,4 +20,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<BuyingModule />, document.getElementById('buying-module'));
