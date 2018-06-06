@@ -11,24 +11,24 @@ const Details = ({name, options, quantity}) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>{name}</h1>
       <h2>${options.price[0]}+</h2>
       <div>{options.name}</div>
-      <select>
-        <option>Select {options.name}</option>
+      <select className="form-control">
+        <option>Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
         {options.differentOptions.map(option =>
         <option value={option} key={option}>{option}</option>)}
       </select>
       <div>Quantity</div>
-      <select>{quantityArray.map(number =>
+      <select className="form-control">{quantityArray.map(number =>
         <option value={number} key={number}>{number}</option>)}
       </select>
       <div>
-        <button>Buy it now</button>
+        <button type="button" className="btn btn-outline-secondary">Buy it now</button>
       </div>
       <div>
-        <button>Add to cart</button>
+        <button type="button" className="btn btn-outline-secondary">Add to cart</button>
       </div>
       <p>Other people want this. {getRandomInt(20)} people have this in their carts right now.</p>
     </div>

@@ -28,12 +28,7 @@ class BuyingModule extends React.Component {
   }
 
   componentDidMount() {
-    this.getProductData();
-  }
-
-  getProductData() {
-    const url = window.location.pathname;
-    axios.get(`${url}details`)
+    axios.get(`${window.location.pathname}details`)
       .then((response) => {
         console.log('Product Data: ', response.data);
         this.setState({
@@ -56,7 +51,7 @@ class BuyingModule extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Details
           name={this.state.name}
           options={this.state.options}
