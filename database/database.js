@@ -10,7 +10,7 @@ const detailsSchema = mongoose.Schema({
   freeShipping: Boolean,
   options: {
     name: String,
-    optionName: [String],
+    differentOptions: [String],
     price: [Number],
   },
   quantity: Number,
