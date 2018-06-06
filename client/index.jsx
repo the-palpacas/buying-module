@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
+import Overview from './components/Overview.jsx';
 
 const axios = require('axios');
 
@@ -56,6 +57,14 @@ class BuyingModule extends React.Component {
           name={this.state.name}
           options={this.state.options}
           quantity={this.state.quantity}
+        />
+        <hr />
+        <Overview
+          handmade={this.state.handmade}
+          madeToOrder={this.state.madeToOrder}
+          materials={this.state.materials}
+          giftMessage={this.state.giftMessage}
+          giftCard={this.state.giftCard}
         />
       </div>
     );
