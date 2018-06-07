@@ -49,7 +49,11 @@ class BuyingModule extends React.Component {
           madeToOrder: response.data[0].madeToOrder,
           materials: response.data[0].materials,
           name: response.data[0].name,
-          options: response.data[0].options,
+          options: {
+            name: response.data[0].options.name,
+            differentOptions: response.data[0].options.differentOptions,
+            price: response.data[0].options.price,
+          },
           quantity: response.data[0].quantity,
           shippingCountries: response.data[0].shippingCountries,
           shippingPrice: response.data[0].shippingPrice,
