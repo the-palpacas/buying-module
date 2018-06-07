@@ -4,11 +4,27 @@ class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      dimension: 'unselected',
+      quantity: 0,
     };
+    this.handleDimensionChange = this.handleDimensionChange.bind(this);
+    this.handleQuantityChange = this.handleQuantityChange.bind(this);
   }
 
   getRandomInt(max) {
     return Math.floor(Math.random() * max + 2);
+  }
+
+  handleDimensionChange(event) {
+    this.setState({
+      dimension: event.target.value,
+    });
+  }
+
+  handleQuantityChange(event) {
+    this.setState({
+      quantity: event.target.value,
+    });
   }
 
   render() {
@@ -40,13 +56,14 @@ class Details extends React.Component {
         <h1>{name}</h1>
         <h2>${options.price[0]}+</h2>
         <div>{options.name}</div>
-        <select className="form-control">
-          <option>Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
+        <select className="form-control" value={this.state.dimension} onChange={this.handleDimensionChange}>
+          <option value="unselected">Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
           {createOptionsDropdown()}
         </select>
         <div>Quantity</div>
-        <select className="form-control">{quantityArray.map(number =>
-          <option value={number} key={number}>{number}</option>)}
+        <select className="form-control" value={this.state.quantity} onChange={this.handleQuantityChange}>
+          {quantityArray.map(number =>
+            <option value={number} key={number}>{number}</option>)}
         </select>
         <div>
           <button type="button" className="btn btn-outline-secondary">Buy it now</button>
