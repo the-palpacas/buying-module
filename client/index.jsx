@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
 import Overview from './components/Overview.jsx';
+import Shipping from './components/Shipping.jsx';
 
 const axios = require('axios');
 
@@ -9,6 +10,8 @@ class BuyingModule extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      favoritedBy: null,
+      feedback: null,
       freeShipping: null,
       giftCard: null,
       giftMessage: null,
@@ -25,10 +28,9 @@ class BuyingModule extends React.Component {
       quantity: null,
       shippingCountries: [],
       shippingPrice: [],
-      feedback: null,
-      favoritedBy: null,
       shippingMin: null,
       shippingMax: null,
+      currentCountry: null,
     };
   }
 
@@ -37,6 +39,8 @@ class BuyingModule extends React.Component {
       .then((response) => {
         console.log('Product Data: ', response.data);
         this.setState({
+          favoritedBy: response.data[0].favoritedBy,
+          feedback: response.data[0].feedback,
           freeShipping: response.data[0].freeShipping,
           giftCard: response.data[0].giftCard,
           giftMessage: response.data[0].giftMessage,
@@ -49,8 +53,6 @@ class BuyingModule extends React.Component {
           quantity: response.data[0].quantity,
           shippingCountries: response.data[0].shippingCountries,
           shippingPrice: response.data[0].shippingPrice,
-          feedback: response.data[0].feedback,
-          favoritedBy: response.data[0].favoritedBy,
           shippingMin: response.data[0].shippingMin,
           shippingMax: response.data[0].shippingMax,
         });
@@ -77,6 +79,14 @@ class BuyingModule extends React.Component {
           favoritedBy={this.state.favoritedBy}
           shippingMin={this.state.shippingMin}
           shippingMax={this.state.shippingMax}
+        />
+        <hr />
+        <Shipping
+          shippingCountries={this.state.shippingCountries}
+          shippingPrice={this.state.shippingPrice}
+          shippingMin={this.state.shippingMin}
+          shippingMax={this.state.shippingMax}
+          currentCountry={this.state.currentCountry}
         />
       </div>
     );
