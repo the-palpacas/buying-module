@@ -5,7 +5,7 @@ class Details extends React.Component {
     super(props);
     this.state = {
       dimension: 'unselected',
-      quantity: 0,
+      quantity: 1,
     };
     this.handleDimensionChange = this.handleDimensionChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
@@ -51,10 +51,18 @@ class Details extends React.Component {
       return holder;
     };
 
+    let shownPrice = (options.price[0] * this.state.quantity).toFixed(2);
+    for (let i = 0; i < options.differentOptions.length; i += 1) {
+      if (this.state.dimension === options.differentOptions[i]) {
+        shownPrice = (options.price[i] * this.state.quantity).toFixed(2);
+      }
+    }
+
+
     return (
       <div>
         <h1>{name}</h1>
-        <h2>${options.price[0]}+</h2>
+        <h2>${this.state.dimension === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
         <div>{options.name}</div>
         <select className="form-control" value={this.state.dimension} onChange={this.handleDimensionChange}>
           <option value="unselected">Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
