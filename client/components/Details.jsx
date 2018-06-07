@@ -11,7 +11,7 @@ const Details = ({name, options, quantity}) => {
   };
 
   return (
-    <div className="container">
+    <div>
       <h1>{name}</h1>
       <h2>${options.price[0]}+</h2>
       <div>{options.name}</div>
@@ -30,7 +30,9 @@ const Details = ({name, options, quantity}) => {
       <div>
         <button type="button" className="btn btn-outline-secondary">Add to cart</button>
       </div>
-      <p>Other people want this. {getRandomInt(20)} people have this in their carts right now.</p>
+      <div>
+        Other people want this. {getRandomInt(20)} people have this in their carts right now.
+      </div>
     </div>
   );
 };

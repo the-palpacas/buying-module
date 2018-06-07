@@ -21,6 +21,10 @@ const detailsSchema = mongoose.Schema({
   giftCard: Boolean,
   shippingCountries: [String],
   shippingPrice: [Number],
+  feedback: Number,
+  favoritedBy: Number,
+  shippingMin: Number,
+  shippingMax: Number,
 });
 
 const Product = mongoose.model('Product', detailsSchema);

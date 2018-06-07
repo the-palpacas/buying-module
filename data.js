@@ -15,7 +15,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 906,
+    "favoritedBy": 779,
+    "shippingMin": 4,
+    "shippingMax": 6
   },
   {
     "id":2,
@@ -33,7 +37,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 907,
+    "favoritedBy": 693,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":3,
@@ -51,7 +59,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 371,
+    "favoritedBy": 196,
+    "shippingMin": 3,
+    "shippingMax": 5
   },
   {
     "id":4,
@@ -68,7 +80,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 109,
+    "favoritedBy": 399,
+    "shippingMin": 3,
+    "shippingMax": 10
   },
   {
     "id":5,
@@ -86,7 +102,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 395,
+    "favoritedBy": 751,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":6,
@@ -104,7 +124,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 628,
+    "favoritedBy": 677,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":7,
@@ -122,7 +146,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 100,
+    "favoritedBy": 172,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":8,
@@ -140,7 +168,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0]
+    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0],
+    "feedback": 159,
+    "favoritedBy": 734,
+    "shippingMin": 2,
+    "shippingMax": 7
   },
   {
     "id":9,
@@ -158,7 +190,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 511,
+    "favoritedBy": 756,
+    "shippingMin": 1,
+    "shippingMax": 6
   },
   {
     "id":10,
@@ -175,7 +211,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 484,
+    "favoritedBy": 710,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":11,
@@ -192,7 +232,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 106,
+    "favoritedBy": 869,
+    "shippingMin": 1,
+    "shippingMax": 10
   },
   {
     "id":12,
@@ -210,7 +254,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 230,
+    "favoritedBy": 564,
+    "shippingMin": 4,
+    "shippingMax": 5
   },
   {
     "id":13,
@@ -228,7 +276,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0]
+    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0],
+    "feedback": 561,
+    "favoritedBy": 555,
+    "shippingMin": 4,
+    "shippingMax": 10
   },
   {
     "id":14,
@@ -245,7 +297,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0]
+    "shippingPrice": [2.57,7.34,4.92,0,1.54,2.34,5.79,0,8.63,9.86,3.13,5.8,0,0,0.8,0,0],
+    "feedback": 336,
+    "favoritedBy": 435,
+    "shippingMin": 3,
+    "shippingMax": 5
   },
   {
     "id":15,
@@ -262,7 +318,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 634,
+    "favoritedBy": 825,
+    "shippingMin": 3,
+    "shippingMax": 5
   },
   {
     "id":16,
@@ -279,7 +339,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 642,
+    "favoritedBy": 310,
+    "shippingMin": 2,
+    "shippingMax": 10
   },
   {
     "id":17,
@@ -297,7 +361,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 997,
+    "favoritedBy": 865,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":18,
@@ -314,7 +382,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 103,
+    "favoritedBy": 732,
+    "shippingMin": 4,
+    "shippingMax": 7
   },
   {
     "id":19,
@@ -331,7 +403,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 868,
+    "favoritedBy": 322,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":20,
@@ -349,7 +425,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 300,
+    "favoritedBy": 891,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":21,
@@ -366,7 +446,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 136,
+    "favoritedBy": 465,
+    "shippingMin": 4,
+    "shippingMax": 5
   },
   {
     "id":22,
@@ -384,7 +468,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0]
+    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "feedback": 891,
+    "favoritedBy": 721,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":23,
@@ -401,7 +489,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0]
+    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0],
+    "feedback": 286,
+    "favoritedBy": 340,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":24,
@@ -418,7 +510,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0]
+    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0],
+    "feedback": 516,
+    "favoritedBy": 755,
+    "shippingMin": 1,
+    "shippingMax": 6
   },
   {
     "id":25,
@@ -436,7 +532,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0]
+    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0],
+    "feedback": 85,
+    "favoritedBy": 215,
+    "shippingMin": 1,
+    "shippingMax": 9
   },
   {
     "id":26,
@@ -453,7 +553,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0]
+    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0],
+    "feedback": 171,
+    "favoritedBy": 471,
+    "shippingMin": 1,
+    "shippingMax": 9
   },
   {
     "id":27,
@@ -471,7 +575,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0]
+    "shippingPrice": [1.84,1.74,9.96,0,1.52,2.42,7.98,0,8.15,8.27,3.76,5.77,0,0,8.27,0,0],
+    "feedback": 980,
+    "favoritedBy": 108,
+    "shippingMin": 1,
+    "shippingMax": 9
   },
   {
     "id":28,
@@ -488,7 +596,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0]
+    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0],
+    "feedback": 970,
+    "favoritedBy": 383,
+    "shippingMin": 2,
+    "shippingMax": 6
   },
   {
     "id":29,
@@ -505,7 +617,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0]
+    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0],
+    "feedback": 826,
+    "favoritedBy": 958,
+    "shippingMin": 2,
+    "shippingMax": 5
   },
   {
     "id":30,
@@ -523,7 +639,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0]
+    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0],
+    "feedback": 667,
+    "favoritedBy": 651,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":31,
@@ -541,7 +661,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0]
+    "shippingPrice": [9.86,3.25,1.45,0,0.83,4.03,8.22,0,6.32,8.15,3.22,4.75,0,0,8.77,0,0],
+    "feedback": 587,
+    "favoritedBy": 89,
+    "shippingMin": 1,
+    "shippingMax": 9
   },
   {
     "id":32,
@@ -559,7 +683,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0]
+    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0],
+    "feedback": 747,
+    "favoritedBy": 599,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":33,
@@ -576,7 +704,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0]
+    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0],
+    "feedback": 258,
+    "favoritedBy": 143,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":34,
@@ -593,7 +725,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0]
+    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0],
+    "feedback": 717,
+    "favoritedBy": 943,
+    "shippingMin": 1,
+    "shippingMax": 6
   },
   {
     "id":35,
@@ -611,7 +747,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0]
+    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0],
+    "feedback": 897,
+    "favoritedBy": 77,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":36,
@@ -628,7 +768,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0]
+    "shippingPrice": [5.91,4.1,0.59,0,9.39,1.8,4.26,0,7.77,5.39,9.85,1.83,0,0,9.45,0,0],
+    "feedback": 795,
+    "favoritedBy": 346,
+    "shippingMin": 2,
+    "shippingMax": 7
   },
   {
     "id":37,
@@ -645,7 +789,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0]
+    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0],
+    "feedback": 386,
+    "favoritedBy": 949,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":38,
@@ -663,7 +811,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0]
+    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0],
+    "feedback": 474,
+    "favoritedBy": 792,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":39,
@@ -681,7 +833,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0]
+    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0],
+    "feedback": 421,
+    "favoritedBy": 801,
+    "shippingMin": 1,
+    "shippingMax": 10
   },
   {
     "id":40,
@@ -699,7 +855,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0]
+    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0],
+    "feedback": 596,
+    "favoritedBy": 798,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":41,
@@ -717,7 +877,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0]
+    "shippingPrice": [5.13,5.26,7.41,0,2.19,0.45,2.8,0,4.84,1.78,5.51,6.08,0,0,4.07,0,0],
+    "feedback": 900,
+    "favoritedBy": 75,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":42,
@@ -735,7 +899,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0]
+    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0],
+    "feedback": 656,
+    "favoritedBy": 90,
+    "shippingMin": 2,
+    "shippingMax": 5
   },
   {
     "id":43,
@@ -753,7 +921,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0]
+    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0],
+    "feedback": 669,
+    "favoritedBy": 756,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":44,
@@ -771,7 +943,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0]
+    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0],
+    "feedback": 410,
+    "favoritedBy": 621,
+    "shippingMin": 3,
+    "shippingMax": 7
   },
   {
     "id":45,
@@ -788,7 +964,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0]
+    "shippingPrice": [7.09,7.04,9.89,0,4.0,5.1,6.05,0,1.45,2.59,9.08,8.39,0,0,0.02,0,0],
+    "feedback": 288,
+    "favoritedBy": 149,
+    "shippingMin": 2,
+    "shippingMax": 6
   },
   {
     "id":46,
@@ -805,7 +985,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0]
+    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0],
+    "feedback": 738,
+    "favoritedBy": 524,
+    "shippingMin": 3,
+    "shippingMax": 6
   },
   {
     "id":47,
@@ -823,7 +1007,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0]
+    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0],
+    "feedback": 198,
+    "favoritedBy": 376,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":48,
@@ -841,7 +1029,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0]
+    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0],
+    "feedback": 884,
+    "favoritedBy": 309,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":49,
@@ -858,7 +1050,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0]
+    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0],
+    "feedback": 454,
+    "favoritedBy": 438,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":50,
@@ -875,7 +1071,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0]
+    "shippingPrice": [7.72,2.75,8.34,0,7.07,6.98,4.59,0,9.37,8.49,2.97,2.16,0,0,5.78,0,0],
+    "feedback": 292,
+    "favoritedBy": 632,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":51,
@@ -892,7 +1092,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 72,
+    "favoritedBy": 785,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":52,
@@ -909,7 +1113,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 470,
+    "favoritedBy": 266,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":53,
@@ -927,7 +1135,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 232,
+    "favoritedBy": 74,
+    "shippingMin": 1,
+    "shippingMax": 6
   },
   {
     "id":54,
@@ -944,7 +1156,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 50,
+    "favoritedBy": 979,
+    "shippingMin": 2,
+    "shippingMax": 10
   },
   {
     "id":55,
@@ -961,7 +1177,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 168,
+    "favoritedBy": 383,
+    "shippingMin": 1,
+    "shippingMax": 6
   },
   {
     "id":56,
@@ -979,7 +1199,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0]
+    "shippingPrice": [9.98,9.92,6.83,0,9.54,6.76,4.76,0,8.56,9.07,2.29,9.75,0,0,9.92,0,0],
+    "feedback": 996,
+    "favoritedBy": 285,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":57,
@@ -996,7 +1220,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0]
+    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0],
+    "feedback": 550,
+    "favoritedBy": 712,
+    "shippingMin": 4,
+    "shippingMax": 10
   },
   {
     "id":58,
@@ -1014,7 +1242,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0]
+    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0],
+    "feedback": 839,
+    "favoritedBy": 274,
+    "shippingMin": 3,
+    "shippingMax": 8
   },
   {
     "id":59,
@@ -1032,7 +1264,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0]
+    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0],
+    "feedback": 626,
+    "favoritedBy": 806,
+    "shippingMin": 1,
+    "shippingMax": 10
   },
   {
     "id":60,
@@ -1050,7 +1286,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0]
+    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0],
+    "feedback": 147,
+    "favoritedBy": 237,
+    "shippingMin": 4,
+    "shippingMax": 8
   },
   {
     "id":61,
@@ -1067,7 +1307,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0]
+    "shippingPrice": [8.29,0.71,0.83,0,6.48,3.44,7.75,0,4.14,8.46,7.26,3.54,0,0,0.6,0,0],
+    "feedback": 278,
+    "favoritedBy": 73,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":62,
@@ -1084,7 +1328,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0]
+    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0],
+    "feedback": 900,
+    "favoritedBy": 234,
+    "shippingMin": 2,
+    "shippingMax": 10
   },
   {
     "id":63,
@@ -1102,7 +1350,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0]
+    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0],
+    "feedback": 82,
+    "favoritedBy": 532,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":64,
@@ -1120,7 +1372,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0]
+    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0],
+    "feedback": 560,
+    "favoritedBy": 711,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":65,
@@ -1138,7 +1394,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0]
+    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0],
+    "feedback": 757,
+    "favoritedBy": 109,
+    "shippingMin": 4,
+    "shippingMax": 10
   },
   {
     "id":66,
@@ -1155,7 +1415,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0]
+    "shippingPrice": [1.94,5.1,5.25,0,0.42,1.84,2.44,0,2.42,2.54,3.23,5.4,0,0,8.04,0,0],
+    "feedback": 475,
+    "favoritedBy": 647,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":67,
@@ -1173,7 +1437,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0]
+    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0],
+    "feedback": 189,
+    "favoritedBy": 251,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":68,
@@ -1191,7 +1459,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0]
+    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0],
+    "feedback": 403,
+    "favoritedBy": 44,
+    "shippingMin": 4,
+    "shippingMax": 5
   },
   {
     "id":69,
@@ -1208,7 +1480,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0]
+    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0],
+    "feedback": 170,
+    "favoritedBy": 383,
+    "shippingMin": 2,
+    "shippingMax": 5
   },
   {
     "id":70,
@@ -1225,7 +1501,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0]
+    "shippingPrice": [5.12,3.06,2.34,0,1.33,0.15,6.61,0,0.46,2.5,0.68,9.53,0,0,9.42,0,0],
+    "feedback": 416,
+    "favoritedBy": 15,
+    "shippingMin": 4,
+    "shippingMax": 9
   },
   {
     "id":71,
@@ -1243,7 +1523,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0]
+    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0],
+    "feedback": 634,
+    "favoritedBy": 322,
+    "shippingMin": 1,
+    "shippingMax": 9
   },
   {
     "id":72,
@@ -1261,7 +1545,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0]
+    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0],
+    "feedback": 201,
+    "favoritedBy": 54,
+    "shippingMin": 2,
+    "shippingMax": 6
   },
   {
     "id":73,
@@ -1279,7 +1567,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0]
+    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0],
+    "feedback": 832,
+    "favoritedBy": 79,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":74,
@@ -1297,7 +1589,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0]
+    "shippingPrice": [1.63,5.84,1.85,0,2.28,5.22,5.07,0,5.73,5.09,2.93,3.52,0,0,5.16,0,0],
+    "feedback": 794,
+    "favoritedBy": 480,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":75,
@@ -1314,7 +1610,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 821,
+    "favoritedBy": 245,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":76,
@@ -1332,7 +1632,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 368,
+    "favoritedBy": 269,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":77,
@@ -1349,7 +1653,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 841,
+    "favoritedBy": 307,
+    "shippingMin": 2,
+    "shippingMax": 5
   },
   {
     "id":78,
@@ -1366,7 +1674,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 522,
+    "favoritedBy": 206,
+    "shippingMin": 1,
+    "shippingMax": 10
   },
   {
     "id":79,
@@ -1383,7 +1695,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 853,
+    "favoritedBy": 902,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":80,
@@ -1400,7 +1716,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 626,
+    "favoritedBy": 963,
+    "shippingMin": 2,
+    "shippingMax": 8
   },
   {
     "id":81,
@@ -1417,7 +1737,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0]
+    "shippingPrice": [4.63,0.33,4.27,0,9.5,5.49,3.63,0,7.91,1.41,8.01,2.81,0,0,3.3,0,0],
+    "feedback": 121,
+    "favoritedBy": 122,
+    "shippingMin": 3,
+    "shippingMax": 7
   },
   {
     "id":82,
@@ -1434,7 +1758,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0]
+    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0],
+    "feedback": 25,
+    "favoritedBy": 546,
+    "shippingMin": 4,
+    "shippingMax": 7
   },
   {
     "id":83,
@@ -1452,7 +1780,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0]
+    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0],
+    "feedback": 266,
+    "favoritedBy": 970,
+    "shippingMin": 1,
+    "shippingMax": 8
   },
   {
     "id":84,
@@ -1470,7 +1802,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0]
+    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0],
+    "feedback": 115,
+    "favoritedBy": 973,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":85,
@@ -1488,7 +1824,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0]
+    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0],
+    "feedback": 465,
+    "favoritedBy": 92,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":86,
@@ -1505,7 +1845,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0]
+    "shippingPrice": [3.84,5.46,8.53,0,8.6,1.14,6.74,0,1.23,5.38,8.7,7.4,0,0,9.68,0,0],
+    "feedback": 69,
+    "favoritedBy": 317,
+    "shippingMin": 3,
+    "shippingMax": 6
   },
   {
     "id":87,
@@ -1523,7 +1867,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0]
+    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0],
+    "feedback": 454,
+    "favoritedBy": 665,
+    "shippingMin": 3,
+    "shippingMax": 6
   },
   {
     "id":88,
@@ -1540,7 +1888,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0]
+    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0],
+    "feedback": 221,
+    "favoritedBy": 727,
+    "shippingMin": 1,
+    "shippingMax": 7
   },
   {
     "id":89,
@@ -1558,7 +1910,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0]
+    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0],
+    "feedback": 444,
+    "favoritedBy": 242,
+    "shippingMin": 1,
+    "shippingMax": 5
   },
   {
     "id":90,
@@ -1575,7 +1931,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0]
+    "shippingPrice": [3.87,9.88,8.49,0,8.12,7.81,8.12,0,1.91,3.69,7.35,8.02,0,0,6.91,0,0],
+    "feedback": 790,
+    "favoritedBy": 711,
+    "shippingMin": 2,
+    "shippingMax": 9
   },
   {
     "id":91,
@@ -1592,7 +1952,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0]
+    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0],
+    "feedback": 260,
+    "favoritedBy": 575,
+    "shippingMin": 4,
+    "shippingMax": 5
   },
   {
     "id":92,
@@ -1610,7 +1974,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0]
+    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0],
+    "feedback": 589,
+    "favoritedBy": 137,
+    "shippingMin": 3,
+    "shippingMax": 7
   },
   {
     "id":93,
@@ -1627,7 +1995,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0]
+    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0],
+    "feedback": 682,
+    "favoritedBy": 295,
+    "shippingMin": 4,
+    "shippingMax": 10
   },
   {
     "id":94,
@@ -1644,7 +2016,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0]
+    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0],
+    "feedback": 203,
+    "favoritedBy": 755,
+    "shippingMin": 3,
+    "shippingMax": 7
   },
   {
     "id":95,
@@ -1661,7 +2037,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0]
+    "shippingPrice": [4.95,9.65,8.42,0,9.79,0.85,4.9,0,3.49,6.55,6.53,4.83,0,0,1.62,0,0],
+    "feedback": 711,
+    "favoritedBy": 736,
+    "shippingMin": 3,
+    "shippingMax": 6
   },
   {
     "id":96,
@@ -1679,7 +2059,11 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0]
+    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0],
+    "feedback": 48,
+    "favoritedBy": 632,
+    "shippingMin": 2,
+    "shippingMax": 5
   },
   {
     "id":97,
@@ -1697,7 +2081,11 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0]
+    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0],
+    "feedback": 197,
+    "favoritedBy": 204,
+    "shippingMin": 4,
+    "shippingMax": 6
   },
   {
     "id":98,
@@ -1715,7 +2103,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0]
+    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0],
+    "feedback": 152,
+    "favoritedBy": 146,
+    "shippingMin": 2,
+    "shippingMax": 6
   },
   {
     "id":99,
@@ -1733,7 +2125,11 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0]
+    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0],
+    "feedback": 523,
+    "favoritedBy": 674,
+    "shippingMin": 3,
+    "shippingMax": 8
   },
   {
     "id":100,
@@ -1750,7 +2146,11 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0]
+    "shippingPrice": [7.29,5.34,7.36,0,5.08,7.26,2.19,0,7.65,0.01,0.07,9.0,0,0,5.6,0,0],
+    "feedback": 903,
+    "favoritedBy": 332,
+    "shippingMin": 3,
+    "shippingMax": 10
   }
 ];
 
