@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard}) => {
+const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feedback, favoritedBy}) => {
   const getRandomInt = (max) => {
     return Math.floor(Math.random() * max + 2);
   };
@@ -12,8 +12,8 @@ const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard}) => 
         {handmade ? <li>Handmade item</li> : null}
         {madeToOrder ? <li>Made to order</li> : null}
         {materials ? <li>Materials: {materials}</li> : null}
-        <li>Feedback: {getRandomInt(1000)} reviews</li>
-        <li>Favorited by: {getRandomInt(1000)} people</li>
+        <li>Feedback: {feedback} reviews</li>
+        <li>Favorited by: {favoritedBy} people</li>
         {giftMessage ? <li>Gift message available</li> : null}
       </ul>
       <div>

@@ -25,6 +25,10 @@ class BuyingModule extends React.Component {
       quantity: null,
       shippingCountries: [],
       shippingPrice: [],
+      feedback: null,
+      favoritedBy: null,
+      shippingMin: null,
+      shippingMax: null,
     };
   }
 
@@ -45,6 +49,10 @@ class BuyingModule extends React.Component {
           quantity: response.data[0].quantity,
           shippingCountries: response.data[0].shippingCountries,
           shippingPrice: response.data[0].shippingPrice,
+          feedback: response.data[0].feedback,
+          favoritedBy: response.data[0].favoritedBy,
+          shippingMin: response.data[0].shippingMin,
+          shippingMax: response.data[0].shippingMax,
         });
       })
       .catch(error => console.error('Error in getting product data: ', error));
@@ -65,6 +73,10 @@ class BuyingModule extends React.Component {
           materials={this.state.materials}
           giftMessage={this.state.giftMessage}
           giftCard={this.state.giftCard}
+          feedback={this.state.feedback}
+          favoritedBy={this.state.favoritedBy}
+          shippingMin={this.state.shippingMin}
+          shippingMax={this.state.shippingMax}
         />
       </div>
     );
