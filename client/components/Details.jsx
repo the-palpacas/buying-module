@@ -4,10 +4,10 @@ class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dimension: 'unselected',
+      option: 'unselected',
       quantity: 1,
     };
-    this.handleDimensionChange = this.handleDimensionChange.bind(this);
+    this.handleOptionsChange = this.handleOptionsChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
   }
 
@@ -15,9 +15,9 @@ class Details extends React.Component {
     return Math.floor(Math.random() * max + 2);
   }
 
-  handleDimensionChange(event) {
+  handleOptionsChange(event) {
     this.setState({
-      dimension: event.target.value,
+      option: event.target.value,
     });
   }
 
@@ -43,7 +43,7 @@ class Details extends React.Component {
       let holder = [];
       let i = 0;
       while (i < options.price.length) {
-        options.differentOptions.map((option) => {
+        options.differentOptions.map(option => {
           holder.push(<option value={option} key={option}>{option} (${options.price[i]})</option>);
           i += 1;
         });
@@ -53,19 +53,18 @@ class Details extends React.Component {
 
     let shownPrice = (options.price[0] * this.state.quantity).toFixed(2);
     for (let i = 0; i < options.differentOptions.length; i += 1) {
-      if (this.state.dimension === options.differentOptions[i]) {
+      if (this.state.option === options.differentOptions[i]) {
         shownPrice = (options.price[i] * this.state.quantity).toFixed(2);
       }
     }
 
-
     return (
       <div>
         <h1>{name}</h1>
-        <h2>${this.state.dimension === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
+        <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
         <div>{options.name}</div>
-        <select className="form-control" value={this.state.dimension} onChange={this.handleDimensionChange}>
-          <option value="unselected">Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
+        <select className="form-control" value={this.state.option} onChange={this.handleOptionsChange}>
+          <option value="unselected">Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}</option>
           {createOptionsDropdown()}
         </select>
         <div>Quantity</div>
