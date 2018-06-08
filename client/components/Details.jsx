@@ -3,6 +3,15 @@ import React from 'react';
 
 // ReactModal.setAppElement('#buying-module');
 
+const SmallerText = styled.div`
+  font-size: 75%;
+`;
+
+const SmallerGreyText = styled.div`
+  font-size: 75%;
+  color: grey;
+`
+
 class Details extends React.Component { 
   constructor(props) {
     super(props);
@@ -104,6 +113,7 @@ class Details extends React.Component {
           >
             Buy it now
           </button>
+<<<<<<< HEAD
           {/* <
           <ReactModal
             isOpen={this.state.showModal}
@@ -115,6 +125,26 @@ class Details extends React.Component {
           </ReactModal> */}
           <div className="modal fade" id="buyItNow" tabIndex="-1" role="dialog" aria-labelledby="buyItNowLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
+=======
+          <Modal open={this.state.showModal} onClose={this.closeModal} center>
+            <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
+            <form>
+              <input type="radio" value="cc" name="payment" /> Credit card<br />
+              <input type="radio" value="paypal" name="payment" /> PayPal<br />
+            </form>
+            <hr />
+            <div><p><strong>Order summary</strong></p></div>
+            <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
+            <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
+            <SmallerText>(To COUNTRY HERE)</SmallerText>
+            <hr />
+            <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
+            <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
+            <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
+          </Modal>
+          {/* <div className="modal fade" id="buyItNow" tabIndex="-1" role="dialog" aria-labelledby="buyItNowLabel" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered" role="document">
+>>>>>>> Implement buy it now modal skeleton.
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title" id="buyItNow">Choose your payment method</h5>
