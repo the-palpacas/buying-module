@@ -1,7 +1,11 @@
 import React from 'react';
-// import ReactModal from 'react-modal';
+import styled from 'styled-components';
+import Modal from 'react-responsive-modal';
 
-// ReactModal.setAppElement('#buying-module');
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 const SmallerText = styled.div`
   font-size: 75%;
@@ -10,7 +14,11 @@ const SmallerText = styled.div`
 const SmallerGreyText = styled.div`
   font-size: 75%;
   color: grey;
-`
+`;
+
+const NoOptionSelected = styled.div`
+  background-color: red;
+`;
 
 class Details extends React.Component { 
   constructor(props) {
@@ -19,15 +27,34 @@ class Details extends React.Component {
       option: 'unselected',
       quantity: 1,
       showModal: false,
+      buyButtonClickedWithNoOption: false,
     };
     this.handleOptionsChange = this.handleOptionsChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
-    // this.handleOpenModal = this.handleOpenModal.bind(this);
-    // this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.showModal = this.showModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   getRandomInt(max) {
     return Math.floor(Math.random() * max + 2);
+  }
+
+  showModal() {
+    if (this.state.option !== 'unselected') {
+      this.setState({
+        showModal: true,
+      });
+    } else {
+      this.setState({
+        buyButtonClickedWithNoOption: true,
+      });
+    }
+  }
+
+  closeModal() {
+    this.setState({
+      showModal: false,
+    });
   }
 
   handleOptionsChange(event) {
@@ -41,18 +68,6 @@ class Details extends React.Component {
       quantity: event.target.value,
     });
   }
-
-  // handleOpenModal () {
-  //   this.setState({
-  //     showModal: true,
-  //   });
-  // }
-
-  // handleCloseModal () {
-  //   this.setState({
-  //     showModal: false,
-  //   });
-  // }
 
   render() {
     const {
@@ -94,6 +109,7 @@ class Details extends React.Component {
           <option value="unselected">Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}</option>
           {createOptionsDropdown()}
         </select>
+        <NoOptionSelected>{this.state.buyButtonClickedWithNoOption ? `Please select ${options.name.toLowerCase()}` : null}</NoOptionSelected>
         <div>Quantity</div>
         <select
           className="form-control"
@@ -105,63 +121,28 @@ class Details extends React.Component {
         </select>
         <div>
           <button
-            type="button"
-            className="btn btn-outline-secondary"
-            // onClick={this.handleOpenModal}
-            data-toggle="modal"
-            data-target="#buyItNow"
-          >
-            Buy it now
-          </button>
-<<<<<<< HEAD
-          {/* <
-          <ReactModal
-            isOpen={this.state.showModal}
-            contentLabel="test"
-            onRequestClose={this.handleCloseModal}
-          >
-            MODAL TEXT HERE
-            <button onClick={this.handleCloseModal}>Close Modal</button>
-          </ReactModal> */}
-          <div className="modal fade" id="buyItNow" tabIndex="-1" role="dialog" aria-labelledby="buyItNowLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-=======
-          <Modal open={this.state.showModal} onClose={this.closeModal} center>
-            <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
-            <form>
-              <input type="radio" value="cc" name="payment" /> Credit card<br />
-              <input type="radio" value="paypal" name="payment" /> PayPal<br />
-            </form>
-            <hr />
-            <div><p><strong>Order summary</strong></p></div>
-            <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
-            <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
-            <SmallerText>(To COUNTRY HERE)</SmallerText>
-            <hr />
-            <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
-            <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
-            <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
-          </Modal>
-          {/* <div className="modal fade" id="buyItNow" tabIndex="-1" role="dialog" aria-labelledby="buyItNowLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
->>>>>>> Implement buy it now modal skeleton.
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title" id="buyItNow">Choose your payment method</h5>
-                  <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div className="modal-body">
-                  ...
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" className="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+              type="button"
+              className="btn btn-outline-secondary"
+              onClick={this.showModal}
+            >
+              Buy it now
+            </button>
+            <Modal open={this.state.showModal} onClose={this.closeModal} center>
+              <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
+              <form>
+                <input type="radio" value="cc" name="payment" /> Credit card<br />
+                <input type="radio" value="paypal" name="payment" /> PayPal<br />
+              </form>
+              <hr />
+              <div><p><strong>Order summary</strong></p></div>
+              <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
+              <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
+              <SmallerText>(To COUNTRY HERE)</SmallerText>
+              <hr />
+              <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
+              <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
+              <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
+            </Modal>
         </div>
         <div>
           <button type="button" className="btn btn-outline-secondary">Add to cart</button>
