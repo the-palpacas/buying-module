@@ -1,13 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import ReactModal from 'react-modal';
 
-const RightItem = styled.p`
-  text-align: right;
-`;
-
-const LeftItem = styled.span`
-  float: left;  
-`;
+// ReactModal.setAppElement('#buying-module');
 
 class Details extends React.Component { 
   constructor(props) {
@@ -19,6 +13,8 @@ class Details extends React.Component {
     };
     this.handleOptionsChange = this.handleOptionsChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
+    // this.handleOpenModal = this.handleOpenModal.bind(this);
+    // this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
   getRandomInt(max) {
@@ -36,6 +32,18 @@ class Details extends React.Component {
       quantity: event.target.value,
     });
   }
+
+  // handleOpenModal () {
+  //   this.setState({
+  //     showModal: true,
+  //   });
+  // }
+
+  // handleCloseModal () {
+  //   this.setState({
+  //     showModal: false,
+  //   });
+  // }
 
   render() {
     const {
@@ -73,17 +81,8 @@ class Details extends React.Component {
         <h1>{name}</h1>
         <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
         <div>{options.name}</div>
-<<<<<<< HEAD
         <select className="form-control" value={this.state.option} onChange={this.handleOptionsChange}>
           <option value="unselected">Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}</option>
-=======
-        <select
-          className="form-control"
-          value={this.state.dimension}
-          onChange={this.handleDimensionChange}
-        >
-          <option value="unselected">Select {options.name === null ? 'categories' : options.name.toLowerCase()}</option>
->>>>>>> Create skeleton modal for buy it now button.
           {createOptionsDropdown()}
         </select>
         <div>Quantity</div>
@@ -99,13 +98,23 @@ class Details extends React.Component {
           <button
             type="button"
             className="btn btn-outline-secondary"
+            // onClick={this.handleOpenModal}
             data-toggle="modal"
             data-target="#buyItNow"
           >
             Buy it now
           </button>
+          {/* <
+          <ReactModal
+            isOpen={this.state.showModal}
+            contentLabel="test"
+            onRequestClose={this.handleCloseModal}
+          >
+            MODAL TEXT HERE
+            <button onClick={this.handleCloseModal}>Close Modal</button>
+          </ReactModal> */}
           <div className="modal fade" id="buyItNow" tabIndex="-1" role="dialog" aria-labelledby="buyItNowLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title" id="buyItNow">Choose your payment method</h5>
@@ -114,11 +123,7 @@ class Details extends React.Component {
                   </button>
                 </div>
                 <div className="modal-body">
-                  <input type="radio" id="radioButton" /> Credit card<br />
-                  <input type="radio" id="radioButton" /> PayPal<br />
-                  <hr />
-                  <div><p><strong>Order summary</strong></p></div>
-                  <div><RightItem><LeftItem>Item(s) total</LeftItem>$price</RightItem></div>
+                  ...
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
