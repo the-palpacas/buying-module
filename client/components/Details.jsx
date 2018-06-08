@@ -26,11 +26,11 @@ class Details extends React.Component {
     this.state = {
       option: 'unselected',
       quantity: 1,
-      showModal: false,
+      showBuyItNowModal: false,
+      // showAddToCartModal: false,
       buyButtonClickedWithNoOption: false,
     };
-    this.handleOptionsChange = this.handleOptionsChange.bind(this);
-    this.handleQuantityChange = this.handleQuantityChange.bind(this);
+    this.handleSelectChange = this.handleSelectChange.bind(this);
     this.showModal = this.showModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
@@ -39,11 +39,13 @@ class Details extends React.Component {
     return Math.floor(Math.random() * max + 2);
   }
 
-  showModal() {
+  showModal(name) {
     if (this.state.option !== 'unselected') {
-      this.setState({
-        showModal: true,
-      });
+      if (name === 'buy-it-now') {
+        this.setState({
+          showBuyItNowModal: true,
+        });
+      }
     } else {
       this.setState({
         buyButtonClickedWithNoOption: true,
@@ -53,20 +55,20 @@ class Details extends React.Component {
 
   closeModal() {
     this.setState({
-      showModal: false,
+      showBuyItNowModal: false,
     });
   }
 
-  handleOptionsChange(event) {
-    this.setState({
-      option: event.target.value,
-    });
-  }
-
-  handleQuantityChange(event) {
-    this.setState({
-      quantity: event.target.value,
-    });
+  handleSelectChange(name, value) {
+    if (name === 'select-options') {
+      this.setState({
+        option: value,
+      });
+    } else {
+      this.setState({
+        quantity: value,
+      });
+    }
   }
 
   render() {
@@ -105,7 +107,12 @@ class Details extends React.Component {
         <h1>{name}</h1>
         <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
         <div>{options.name}</div>
-        <select className="form-control" value={this.state.option} onChange={this.handleOptionsChange}>
+        <select 
+          className="form-control"
+          name="select-options"
+          value={this.state.option}
+          onChange={(e) => this.handleSelectChange(e.target.name, e.target.value)}
+        >
           <option value="unselected">Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}</option>
           {createOptionsDropdown()}
         </select>
@@ -113,8 +120,9 @@ class Details extends React.Component {
         <div>Quantity</div>
         <select
           className="form-control"
+          name="select-quantity"
           value={this.state.quantity}
-          onChange={this.handleQuantityChange}
+          onChange={(e) => this.handleSelectChange(e.target.name, e.target.value)}
         >
           {quantityArray.map(number =>
             <option value={number} key={number}>{number}</option>)}
@@ -123,11 +131,12 @@ class Details extends React.Component {
           <button
               type="button"
               className="btn btn-outline-secondary"
-              onClick={this.showModal}
+              name="buy-it-now"
+              onClick={(e) => this.showModal(e.target.name)}
             >
               Buy it now
             </button>
-            <Modal open={this.state.showModal} onClose={this.closeModal} center>
+            <Modal open={this.state.showBuyItNowModal} onClose={this.closeModal} center>
               <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
               <form>
                 <input type="radio" value="cc" name="payment" /> Credit card<br />
@@ -145,7 +154,23 @@ class Details extends React.Component {
             </Modal>
         </div>
         <div>
-          <button type="button" className="btn btn-outline-secondary">Add to cart</button>
+          <button type="button" className="btn btn-outline-secondary" onClick={this.showModal}>Add to cart</button>
+          {/* <Modal open={this.state.showModal} onClose={this.closeModal} center>
+              <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
+              <form>
+                <input type="radio" value="cc" name="payment" /> Credit card<br />
+                <input type="radio" value="paypal" name="payment" /> PayPal<br />
+              </form>
+              <hr />
+              <div><p><strong>Order summary</strong></p></div>
+              <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
+              <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
+              <SmallerText>(To COUNTRY HERE)</SmallerText>
+              <hr />
+              <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
+              <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
+              <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
+            </Modal> */}
         </div>
         <div>
           Other people want this. {this.getRandomInt(20)} people have this in their carts right now.
