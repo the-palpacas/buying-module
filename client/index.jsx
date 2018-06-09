@@ -33,6 +33,7 @@ class BuyingModule extends React.Component {
       currentCountry: null,
       currentShipping: null,
     };
+    this.handleSelectCountry = this.handleSelectCountry.bind(this);
   }
 
   componentDidMount() {
@@ -67,6 +68,12 @@ class BuyingModule extends React.Component {
       .catch(error => console.error('Error in getting product data: ', error));
   }
 
+  handleSelectCountry(country) {
+    this.setState({
+      currentCountry: country,
+    });
+  }
+
   render() {
     return (
       <div className="container">
@@ -95,6 +102,7 @@ class BuyingModule extends React.Component {
           shippingMax={this.state.shippingMax}
           currentCountry={this.state.currentCountry}
           currentShipping={this.state.currentShipping}
+          handleSelectCountry={this.handleSelectCountry}
         />
       </div>
     );

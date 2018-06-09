@@ -17,6 +17,7 @@ class Shipping extends React.Component {
     super(props);
     this.state = {
       showCountrySelect: false,
+      // selectedCountry: this.currentCountry,
     };
     this.handleCountryClick = this.handleCountryClick.bind(this);
   }
@@ -35,6 +36,7 @@ class Shipping extends React.Component {
       shippingMax,
       currentCountry,
       currentShipping,
+      handleSelectCountry,
     } = this.props;
 
     return (
@@ -47,9 +49,15 @@ class Shipping extends React.Component {
           From {currentCountry}<br />
           ${currentShipping} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
           {this.state.showCountrySelect ?
-            <select>
+            <select
+              className="form-control"
+              name="select-country"
+              onChange={e => handleSelectCountry(e.target.value)}
+            >
               <option>Choose Country</option>
               <option disabled>----------</option>
+              {shippingCountries.map(country =>
+                <option value={country} key={country}>{country}</option>)}
             </select>
           : null}
           <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText><br />
