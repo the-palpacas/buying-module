@@ -78,6 +78,7 @@ class Details extends React.Component {
       name,
       options,
       quantity,
+      wantNumber,
     } = this.props;
 
     const quantityArray = [];
@@ -103,8 +104,6 @@ class Details extends React.Component {
         shownPrice = (options.price[i] * this.state.quantity).toFixed(2);
       }
     }
-
-    const randomInt = Math.floor(Math.random() * 18 + 2);
 
     return (
       <div>
@@ -175,7 +174,7 @@ class Details extends React.Component {
           </Modal>
         </div>
         <div>
-          Other people want this. {randomInt} people have this in their carts right now.
+          Other people want this. {wantNumber} people have this in their carts right now.
         </div>
       </div>
     );

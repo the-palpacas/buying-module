@@ -17,7 +17,6 @@ class Shipping extends React.Component {
     super(props);
     this.state = {
       showCountrySelect: false,
-      // selectedCountry: this.currentCountry,
     };
     this.handleCountryClick = this.handleCountryClick.bind(this);
   }
@@ -35,7 +34,7 @@ class Shipping extends React.Component {
       shippingMin,
       shippingMax,
       currentCountry,
-      currentShipping,
+      currentShippingPrice,
       handleSelectCountry,
     } = this.props;
 
@@ -47,7 +46,7 @@ class Shipping extends React.Component {
         <div>
           <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
           From {currentCountry}<br />
-          ${currentShipping} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
+          {currentShippingPrice} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
           {this.state.showCountrySelect ?
             <select
               className="form-control"
