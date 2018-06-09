@@ -1,21 +1,66 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Shipping = ({shippingCountries, shippingPrice, shippingMin, shippingMax}) => {
-  return (
-    <div>
-      <h4>Shipping & returns</h4>
-      <p>
-        Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.<br />
-        From United States<br />
-        $14.00 shipping to United States, 94109<br />
-        Shipping upgrades available in the cart
-      </p>
-      <p>
-        <strong>Returns and exchanges accepted</strong><br />
-        Exceptions may apply. See return policy.
-      </p>
-    </div>
-  );
-};
+const SmallerGreyText = styled.div`
+  font-size: 75%;
+  color: grey;
+`;
+
+const CountryClickableText = styled.span`
+  text-decoration: underline;
+  color: grey;
+  cursor: pointer;
+`;
+
+class Shipping extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showCountrySelect: false,
+    };
+    this.handleCountryClick = this.handleCountryClick.bind(this);
+  }
+
+  handleCountryClick() {
+    this.setState({
+      showCountrySelect: !this.state.showCountrySelect,
+    });
+  }
+
+  render() {
+    const {
+      shippingCountries,
+      shippingPrice,
+      shippingMin,
+      shippingMax,
+      currentCountry,
+      currentShipping,
+    } = this.props;
+
+    return (
+
+
+      <div>
+        <h4>Shipping & returns</h4>
+        <div>
+          <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
+          From {currentCountry}<br />
+          ${currentShipping} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
+          {this.state.showCountrySelect ?
+            <select>
+              <option>Choose Country</option>
+              <option disabled>----------</option>
+            </select>
+          : null}
+          <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText><br />
+        </div>
+        <div>
+          <strong>Returns and exchanges accepted</strong><br />
+          Exceptions may apply. See return policy.
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Shipping;

@@ -31,6 +31,7 @@ class BuyingModule extends React.Component {
       shippingMin: null,
       shippingMax: null,
       currentCountry: null,
+      currentShipping: null,
     };
   }
 
@@ -59,6 +60,8 @@ class BuyingModule extends React.Component {
           shippingPrice: response.data[0].shippingPrice,
           shippingMin: response.data[0].shippingMin,
           shippingMax: response.data[0].shippingMax,
+          currentCountry: response.data[0].shippingCountries[0],
+          currentShipping: response.data[0].shippingPrice[0],
         });
       })
       .catch(error => console.error('Error in getting product data: ', error));
@@ -91,6 +94,7 @@ class BuyingModule extends React.Component {
           shippingMin={this.state.shippingMin}
           shippingMax={this.state.shippingMax}
           currentCountry={this.state.currentCountry}
+          currentShipping={this.state.currentShipping}
         />
       </div>
     );
