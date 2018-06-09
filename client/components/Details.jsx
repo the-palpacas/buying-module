@@ -35,10 +35,6 @@ class Details extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  getRandomInt(max) {
-    return Math.floor(Math.random() * max + 2);
-  }
-
   showModal(name) {
     if (this.state.option !== 'unselected') {
       if (name === 'buy-it-now') {
@@ -107,6 +103,8 @@ class Details extends React.Component {
         shownPrice = (options.price[i] * this.state.quantity).toFixed(2);
       }
     }
+
+    const randomInt = Math.floor(Math.random() * 18 + 2);
 
     return (
       <div>
@@ -177,7 +175,7 @@ class Details extends React.Component {
           </Modal>
         </div>
         <div>
-          Other people want this. {this.getRandomInt(20)} people have this in their carts right now.
+          Other people want this. {randomInt} people have this in their carts right now.
         </div>
       </div>
     );
