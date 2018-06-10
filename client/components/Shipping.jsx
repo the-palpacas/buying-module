@@ -33,6 +33,7 @@ class Shipping extends React.Component {
       shippingPrice,
       shippingMin,
       shippingMax,
+      shopLocation,
       currentCountry,
       currentShippingPrice,
       handleSelectCountry,
@@ -45,7 +46,7 @@ class Shipping extends React.Component {
         <h4>Shipping & returns</h4>
         <div>
           <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
-          From {currentCountry}<br />
+          From {shopLocation}<br />
           {currentShippingPrice} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
           {this.state.showCountrySelect ?
             <select

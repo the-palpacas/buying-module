@@ -30,6 +30,7 @@ class BuyingModule extends React.Component {
       shippingPrice: [],
       shippingMin: null,
       shippingMax: null,
+      shopLocation: null,
       currentCountry: null,
       currentShipping: null,
       wantNumber: Math.floor(Math.random() * 18 + 2),
@@ -62,6 +63,7 @@ class BuyingModule extends React.Component {
           shippingPrice: response.data[0].shippingPrice,
           shippingMin: response.data[0].shippingMin,
           shippingMax: response.data[0].shippingMax,
+          shopLocation: response.data[0].shopLocation,
           currentCountry: response.data[0].shippingCountries[0],
           currentShippingPrice: `$${response.data[0].shippingPrice[0]}`,
         });
@@ -114,6 +116,7 @@ class BuyingModule extends React.Component {
           shippingPrice={this.state.shippingPrice}
           shippingMin={this.state.shippingMin}
           shippingMax={this.state.shippingMax}
+          shopLocation={this.state.shopLocation}
           currentCountry={this.state.currentCountry}
           currentShippingPrice={this.state.currentShippingPrice}
           handleSelectCountry={this.handleSelectCountry}
