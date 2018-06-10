@@ -79,6 +79,8 @@ class Details extends React.Component {
       options,
       quantity,
       wantNumber,
+      currentCountry,
+      currentShippingPrice,
     } = this.props;
 
     const quantityArray = [];
@@ -105,10 +107,26 @@ class Details extends React.Component {
       }
     }
 
+    let taxInfo;
+    const noTaxDisplay = ['United States', 'Canada'];
+    const vatDisplay = ['European Union', 'Belarus', 'Iceland', 'India', 'New Zealand', 'Norway', 'Russia', 'Serbia', 'South Africa', 'South Korea', 'Taiwan', 'Turkey', 'Switzerland', 'United Arab Emirates'];
+    const gstDisplay = ['Australia', 'New Zealand'];
+    if (noTaxDisplay.includes(currentCountry)) {
+      taxInfo = null;
+    } else if (vatDisplay.includes(currentCountry)) {
+      taxInfo = 'VAT included (where applicable)';
+    } else if (gstDisplay.includes(currentCountry)) {
+      taxInfo = 'GST included (where applicable)';
+    } else {
+      taxInfo = 'Local taxes included (where applicable)';
+    }
+
     return (
       <div>
         <h1>{name}</h1>
         <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
+        <SmallerGreyText>{taxInfo}</SmallerGreyText>
+        <SmallerGreyText>{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</SmallerGreyText>
         <div>{options.name}</div>
         <select
           className="form-control"

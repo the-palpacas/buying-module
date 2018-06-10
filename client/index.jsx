@@ -93,6 +93,8 @@ class BuyingModule extends React.Component {
           options={this.state.options}
           quantity={this.state.quantity}
           wantNumber={this.state.wantNumber}
+          currentCountry={this.state.currentCountry}
+          currentShippingPrice={this.state.currentShippingPrice}
         />
         <hr />
         <Overview

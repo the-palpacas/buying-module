@@ -19,7 +19,9 @@ const data = [
     "feedback": 906,
     "favoritedBy": 779,
     "shippingMin": 4,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"China",
+    
   },
   {
     "id":2,
@@ -41,7 +43,8 @@ const data = [
     "feedback": 907,
     "favoritedBy": 693,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Italy",
   },
   {
     "id":3,
@@ -63,7 +66,8 @@ const data = [
     "feedback": 371,
     "favoritedBy": 196,
     "shippingMin": 3,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Armenia"
   },
   {
     "id":4,
@@ -84,7 +88,7 @@ const data = [
     "feedback": 109,
     "favoritedBy": 399,
     "shippingMin": 3,
-    "shippingMax": 10
+    "shippingMax": 10,
   },
   {
     "id":5,
