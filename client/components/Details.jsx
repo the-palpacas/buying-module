@@ -170,10 +170,10 @@ class Details extends React.Component {
             <hr />
             <div><p><strong>Order summary</strong></p></div>
             <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
-            <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
-            <SmallerText>(To COUNTRY HERE)</SmallerText>
+            <Flex><span>Shipping</span><span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span></Flex>
+            <SmallerText>(To {currentCountry})</SmallerText>
             <hr />
-            <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
+            <Flex><span><strong>Total</strong></span><span><strong>${currentShippingPrice !== 'Free' ? +shownPrice + +currentShippingPrice : shownPrice}</strong></span></Flex>
             <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
             <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
           </Modal>

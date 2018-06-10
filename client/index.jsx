@@ -65,7 +65,7 @@ class BuyingModule extends React.Component {
           shippingMax: response.data[0].shippingMax,
           shopLocation: response.data[0].shopLocation,
           currentCountry: response.data[0].shippingCountries[0],
-          currentShippingPrice: `$${response.data[0].shippingPrice[0]}`,
+          currentShippingPrice: response.data[0].shippingPrice[0],
         });
       })
       .catch(error => console.error('Error in getting product data: ', error));
@@ -79,7 +79,7 @@ class BuyingModule extends React.Component {
       }
     }
 
-    const displayedShippingPrice = this.state.shippingPrice[result] === 0 ? 'Free' : `$${this.state.shippingPrice[result].toFixed(2)}`;
+    const displayedShippingPrice = this.state.shippingPrice[result] === 0 ? 'Free' : this.state.shippingPrice[result].toFixed(2);
 
     this.setState({
       currentCountry: country,

@@ -47,7 +47,7 @@ class Shipping extends React.Component {
         <div>
           <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
           From {shopLocation}<br />
-          {currentShippingPrice} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
+          {currentShippingPrice === 'Free' ? currentShippingPrice : `$${currentShippingPrice}`} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
           {this.state.showCountrySelect ?
             <select
               className="form-control"
