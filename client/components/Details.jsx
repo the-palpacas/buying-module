@@ -7,13 +7,9 @@ const Flex = styled.div`
   justify-content: space-between;
 `;
 
-const SmallerText = styled.div`
-  font-size: 75%;
-`;
-
 const SmallerGreyText = styled.div`
   font-size: 75%;
-  color: #777;
+  color: #777777;
   margin-bottom: 5px;
 `;
 
@@ -94,7 +90,7 @@ class Details extends React.Component {
     }
 
     const createOptionsDropdown = () => {
-      let holder = [];
+      const holder = [];
       let i = 0;
       while (i < options.price.length) {
         options.differentOptions.map(option => {
@@ -133,32 +129,34 @@ class Details extends React.Component {
         <SmallerGreyText>{taxInfo}</SmallerGreyText>
         <SmallerGreyText>{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</SmallerGreyText>
         <div>{options.name}</div>
-        <select
-          className="form-control"
-          name="select-options"
-          value={this.state.option}
-          onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
-        >
-          <option
-            value="unselected"
+        <div>
+          <select
+            className="form-control"
+            name="select-options"
+            value={this.state.option}
+            onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
           >
-          Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}
-          </option>
+            <option value="unselected">
+            Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}
+            </option>
           {createOptionsDropdown()}
-        </select>
+          </select>
+        </div>
         <NoOptionSelected>
           <WhiteText>{this.state.buyButtonClickedWithNoOption ? `Please select ${options.name.toLowerCase()}` : null}</WhiteText>
         </NoOptionSelected>
         <div>Quantity</div>
-        <select
-          className="form-control"
-          name="select-quantity"
-          value={this.state.quantity}
-          onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
-        >
-          {quantityArray.map(number =>
-            <option value={number} key={number}>{number}</option>)}
-        </select>
+        <div>
+          <select
+            className="form-control"
+            name="select-quantity"
+            value={this.state.quantity}
+            onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
+          >
+            {quantityArray.map(number =>
+              <option value={number} key={number}>{number}</option>)}
+          </select>
+        </div>
         <div>
           <button
             type="button"
@@ -173,14 +171,14 @@ class Details extends React.Component {
             <form>
               <input type="radio" value="cc" name="payment" />
               <img
-                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc"
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
                 alt="credit-card"
                 className="img-medium"
               />
               <br />
-              <input type="radio" value="paypal" name="payment" /> 
+              <input type="radio" value="paypal" name="payment" />
               <img
-                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal"
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
                 alt="paypal"
                 className="img-small"
               />
@@ -198,7 +196,7 @@ class Details extends React.Component {
               <span>Shipping</span>
               <span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span>
             </Flex>
-            <SmallerText>(To {currentCountry})</SmallerText>
+            <span className="small">(To {currentCountry})</span>
             <hr />
             <Flex>
               <span>
@@ -228,14 +226,22 @@ class Details extends React.Component {
           Add to cart
           </button>
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
-            <h5>CART OVERVIEW HERE &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
+            <h5>
+              <img
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
+                alt="cart-placeholder"
+                className="img-fluid"
+              />
+            </h5>
           </Modal>
         </div>
-        <div>
-          <img 
-            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart"
+        <div className="want-cart">
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart.png"
             alt="shopping-cart"
-            className="img-small float-left" /><strong>Other people want this.</strong> {wantNumber} people have this in their carts right now.
+            className="img-small float-left"
+          />
+          <strong>Other people want this.</strong> {wantNumber} people have this in their carts right now.
         </div>
       </div>
     );

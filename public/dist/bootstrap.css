@@ -73,6 +73,10 @@ body {
   outline: 0 !important;
 }
 
+div {
+  margin-bottom: 5px;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -246,14 +250,20 @@ button:focus {
 
 input,
 button,
-select,
 optgroup,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 button,
@@ -439,6 +449,10 @@ mark,
 .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
+}
+
+.want-cart {
+  margin-top: 20px;
 }
 
 .list-unstyled {

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
 import Overview from './components/Overview.jsx';
 import Shipping from './components/Shipping.jsx';
-import styled from 'styled-components';
 
 const axios = require('axios');
 
@@ -78,7 +77,6 @@ class BuyingModule extends React.Component {
         result = i;
       }
     }
-
     const displayedShippingPrice = this.state.shippingPrice[result] === 0 ? 'Free' : this.state.shippingPrice[result].toFixed(2);
 
     this.setState({
