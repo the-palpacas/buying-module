@@ -3,13 +3,8 @@ import styled from 'styled-components';
 
 const SmallerGreyText = styled.div`
   font-size: 75%;
-  color: grey;
-`;
-
-const CountryClickableText = styled.span`
-  text-decoration: underline;
-  color: grey;
-  cursor: pointer;
+  color: #777777;
+  margin-bottom: 20px;
 `;
 
 class Shipping extends React.Component {
@@ -39,32 +34,52 @@ class Shipping extends React.Component {
       handleSelectCountry,
     } = this.props;
 
+    const renderShipping = () => {
+      if (currentShippingPrice === 'Free') {
+        return currentShippingPrice;
+      }
+      return `$${currentShippingPrice}`;
+    };
+
+    const showCountryDropdown = () => {
+      if (this.state.showCountrySelect) {
+        return (
+          <select
+            className="form-control"
+            name="select-country"
+            onChange={e => handleSelectCountry(e.target.value)}
+          >
+            <option>Choose Country</option>
+            <option disabled>----------</option>
+            {shippingCountries.map(country =>
+              <option value={country} key={country}>{country}</option>)}
+          </select>
+        );
+      }
+      return null;
+    };
+
     return (
-
-
       <div>
-        <h4>Shipping & returns</h4>
+        <h5>Shipping &amp; returns</h5>
         <div>
-          <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
-          From {shopLocation}<br />
-          {currentShippingPrice === 'Free' ? currentShippingPrice : `$${currentShippingPrice}`} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
-          {this.state.showCountrySelect ?
-            <select
-              className="form-control"
-              name="select-country"
-              onChange={e => handleSelectCountry(e.target.value)}
-            >
-              <option>Choose Country</option>
-              <option disabled>----------</option>
-              {shippingCountries.map(country =>
-                <option value={country} key={country}>{country}</option>)}
-            </select>
-          : null}
-          <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText><br />
+          <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong>
         </div>
         <div>
-          <strong>Returns and exchanges accepted</strong><br />
-          Exceptions may apply. See return policy.
+          From {shopLocation}
+        </div>
+        <div>
+          {renderShipping()} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick}><u>{currentCountry}</u></a><br />
+          {showCountryDropdown()}
+        </div>
+        <div>
+          <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText>
+        </div>
+        <div>
+          <strong>Returns and exchanges accepted</strong>
+        </div>
+        <div>
+          Exceptions may apply. <a href="javascript:void(0)"><u>See return policy</u></a>.
         </div>
       </div>
     );

@@ -41,7 +41,6 @@ class BuyingModule extends React.Component {
   componentDidMount() {
     axios.get(`${window.location.pathname}details`)
       .then((response) => {
-        console.log('Product Data: ', response.data);
         this.setState({
           favoritedBy: response.data[0].favoritedBy,
           feedback: response.data[0].feedback,
@@ -78,7 +77,6 @@ class BuyingModule extends React.Component {
         result = i;
       }
     }
-
     const displayedShippingPrice = this.state.shippingPrice[result] === 0 ? 'Free' : this.state.shippingPrice[result].toFixed(2);
 
     this.setState({

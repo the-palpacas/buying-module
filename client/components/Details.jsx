@@ -7,20 +7,21 @@ const Flex = styled.div`
   justify-content: space-between;
 `;
 
-const SmallerText = styled.div`
-  font-size: 75%;
-`;
-
 const SmallerGreyText = styled.div`
   font-size: 75%;
-  color: grey;
+  color: #777777;
+  margin-bottom: 5px;
 `;
 
 const NoOptionSelected = styled.div`
-  background-color: red;
+  background-color: #F76A6A;
 `;
 
-class Details extends React.Component { 
+const WhiteText = styled.span`
+  color: #FFFFFF;
+`;
+
+class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -89,7 +90,7 @@ class Details extends React.Component {
     }
 
     const createOptionsDropdown = () => {
-      let holder = [];
+      const holder = [];
       let i = 0;
       while (i < options.price.length) {
         options.differentOptions.map(option => {
@@ -123,76 +124,124 @@ class Details extends React.Component {
 
     return (
       <div>
-        <h1>{name}</h1>
-        <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
+        <h3>{name}</h3>
+        <h4>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h4>
         <SmallerGreyText>{taxInfo}</SmallerGreyText>
         <SmallerGreyText>{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</SmallerGreyText>
         <div>{options.name}</div>
-        <select
-          className="form-control"
-          name="select-options"
-          value={this.state.option}
-          onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
-        >
-          <option
-            value="unselected"
+        <div>
+          <select
+            className="form-control"
+            name="select-options"
+            value={this.state.option}
+            onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
           >
-          Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}
-          </option>
+            <option value="unselected">
+            Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}
+            </option>
           {createOptionsDropdown()}
-        </select>
-        <NoOptionSelected>{this.state.buyButtonClickedWithNoOption ? `Please select ${options.name.toLowerCase()}` : null}</NoOptionSelected>
+          </select>
+        </div>
+        <NoOptionSelected>
+          <WhiteText>{this.state.buyButtonClickedWithNoOption ? `Please select ${options.name.toLowerCase()}` : null}</WhiteText>
+        </NoOptionSelected>
         <div>Quantity</div>
-        <select
-          className="form-control"
-          name="select-quantity"
-          value={this.state.quantity}
-          onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
-        >
-          {quantityArray.map(number =>
-            <option value={number} key={number}>{number}</option>)}
-        </select>
+        <div>
+          <select
+            className="form-control"
+            name="select-quantity"
+            value={this.state.quantity}
+            onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
+          >
+            {quantityArray.map(number =>
+              <option value={number} key={number}>{number}</option>)}
+          </select>
+        </div>
         <div>
           <button
             type="button"
-            className="btn btn-outline-secondary"
+            className="btn btn-outline-primary"
             name="buy-it-now"
             onClick={e => this.showModal(e.target.name)}
           >
-            Buy it now
+            Buy it now &gt;
           </button>
           <Modal open={this.state.showBuyItNowModal} onClose={this.closeModal} center>
             <h5>Choose your payment method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
             <form>
-              <input type="radio" value="cc" name="payment" /> Credit card<br />
-              <input type="radio" value="paypal" name="payment" /> PayPal<br />
+              <input type="radio" value="cc" name="payment" />
+              <img
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
+                alt="credit-card"
+                className="img-medium"
+              />
+              <br />
+              <input type="radio" value="paypal" name="payment" />
+              <img
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
+                alt="paypal"
+                className="img-small"
+              />
+              <br />
             </form>
             <hr />
-            <div><p><strong>Order summary</strong></p></div>
-            <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
-            <Flex><span>Shipping</span><span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span></Flex>
-            <SmallerText>(To {currentCountry})</SmallerText>
+            <div>
+              <p><strong>Order summary</strong></p>
+            </div>
+            <Flex>
+              <span>Item(s) total</span>
+              <span>${shownPrice}</span>
+            </Flex>
+            <Flex>
+              <span>Shipping</span>
+              <span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span>
+            </Flex>
+            <span className="small">(To {currentCountry})</span>
             <hr />
-            <Flex><span><strong>Total</strong></span><span><strong>${currentShippingPrice !== 'Free' ? +shownPrice + +currentShippingPrice : shownPrice}</strong></span></Flex>
-            <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
-            <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
+            <Flex>
+              <span>
+                <strong>Total</strong>
+              </span>
+              <span>
+                <strong>${currentShippingPrice !== 'Free' ? (+shownPrice + +currentShippingPrice).toFixed(2) : shownPrice}</strong>
+              </span>
+            </Flex>
+            <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a>.</SmallerGreyText>
+            <div>
+              <center>
+                <button type="button" className="btn btn-secondary">
+                Proceed to checkout
+                </button>
+              </center>
+            </div>
           </Modal>
         </div>
         <div>
           <button
             type="button"
-            className="btn btn-outline-secondary"
+            className="btn btn-primary"
             name="add-to-cart"
             onClick={e => this.showModal(e.target.name)}
           >
           Add to cart
           </button>
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
-            <h5>CART OVERVIEW HERE &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h5>
+            <h5>
+              <img
+                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
+                alt="cart-placeholder"
+                className="img-fluid"
+              />
+            </h5>
           </Modal>
         </div>
-        <div>
-          Other people want this. {wantNumber} people have this in their carts right now.
+        <div className="want-cart">
+          <img
+            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart.png"
+            alt="shopping-cart"
+            className="img-small float-left"
+          />
+          <strong>Other people want this.</strong> {wantNumber} people have this in their carts right now.
         </div>
       </div>
     );
