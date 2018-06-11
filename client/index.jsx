@@ -42,7 +42,6 @@ class BuyingModule extends React.Component {
   componentDidMount() {
     axios.get(`${window.location.pathname}details`)
       .then((response) => {
-        console.log('Product Data: ', response.data);
         this.setState({
           favoritedBy: response.data[0].favoritedBy,
           feedback: response.data[0].feedback,
