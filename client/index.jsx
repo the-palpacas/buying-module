@@ -30,8 +30,12 @@ class BuyingModule extends React.Component {
       shippingPrice: [],
       shippingMin: null,
       shippingMax: null,
+      shopLocation: null,
       currentCountry: null,
+      currentShipping: null,
+      wantNumber: Math.floor(Math.random() * 18 + 2),
     };
+    this.handleSelectCountry = this.handleSelectCountry.bind(this);
   }
 
   componentDidMount() {
@@ -59,9 +63,28 @@ class BuyingModule extends React.Component {
           shippingPrice: response.data[0].shippingPrice,
           shippingMin: response.data[0].shippingMin,
           shippingMax: response.data[0].shippingMax,
+          shopLocation: response.data[0].shopLocation,
+          currentCountry: response.data[0].shippingCountries[0],
+          currentShippingPrice: response.data[0].shippingPrice[0],
         });
       })
       .catch(error => console.error('Error in getting product data: ', error));
+  }
+
+  handleSelectCountry(country) {
+    let result;
+    for (let i = 0; i < this.state.shippingCountries.length; i += 1) {
+      if (this.state.shippingCountries[i] === country) {
+        result = i;
+      }
+    }
+
+    const displayedShippingPrice = this.state.shippingPrice[result] === 0 ? 'Free' : this.state.shippingPrice[result].toFixed(2);
+
+    this.setState({
+      currentCountry: country,
+      currentShippingPrice: displayedShippingPrice,
+    });
   }
 
   render() {
@@ -71,6 +94,9 @@ class BuyingModule extends React.Component {
           name={this.state.name}
           options={this.state.options}
           quantity={this.state.quantity}
+          wantNumber={this.state.wantNumber}
+          currentCountry={this.state.currentCountry}
+          currentShippingPrice={this.state.currentShippingPrice}
         />
         <hr />
         <Overview
@@ -90,7 +116,10 @@ class BuyingModule extends React.Component {
           shippingPrice={this.state.shippingPrice}
           shippingMin={this.state.shippingMin}
           shippingMax={this.state.shippingMax}
+          shopLocation={this.state.shopLocation}
           currentCountry={this.state.currentCountry}
+          currentShippingPrice={this.state.currentShippingPrice}
+          handleSelectCountry={this.handleSelectCountry}
         />
       </div>
     );

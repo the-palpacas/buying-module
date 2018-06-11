@@ -15,11 +15,13 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 906,
     "favoritedBy": 779,
     "shippingMin": 4,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"China",
+    
   },
   {
     "id":2,
@@ -37,11 +39,12 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 907,
     "favoritedBy": 693,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Italy",
   },
   {
     "id":3,
@@ -59,11 +62,12 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 371,
     "favoritedBy": 196,
     "shippingMin": 3,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Armenia"
   },
   {
     "id":4,
@@ -80,11 +84,12 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 109,
     "favoritedBy": 399,
     "shippingMin": 3,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Portugal"
   },
   {
     "id":5,
@@ -102,11 +107,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 395,
     "favoritedBy": 751,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Indonesia"
   },
   {
     "id":6,
@@ -124,11 +130,12 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 628,
     "favoritedBy": 677,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Brazil"
   },
   {
     "id":7,
@@ -146,11 +153,12 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 100,
     "favoritedBy": 172,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Indonesia"
   },
   {
     "id":8,
@@ -172,7 +180,8 @@ const data = [
     "feedback": 159,
     "favoritedBy": 734,
     "shippingMin": 2,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Portugal"
   },
   {
     "id":9,
@@ -190,11 +199,12 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 511,
     "favoritedBy": 756,
     "shippingMin": 1,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Uruguay"
   },
   {
     "id":10,
@@ -211,11 +221,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 484,
     "favoritedBy": 710,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"South Africa"
   },
   {
     "id":11,
@@ -232,11 +243,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 106,
     "favoritedBy": 869,
     "shippingMin": 1,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"China"
   },
   {
     "id":12,
@@ -254,11 +266,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 230,
     "favoritedBy": 564,
     "shippingMin": 4,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Russia"
   },
   {
     "id":13,
@@ -280,7 +293,8 @@ const data = [
     "feedback": 561,
     "favoritedBy": 555,
     "shippingMin": 4,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"El Salvador"
   },
   {
     "id":14,
@@ -301,7 +315,8 @@ const data = [
     "feedback": 336,
     "favoritedBy": 435,
     "shippingMin": 3,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"France"
   },
   {
     "id":15,
@@ -318,11 +333,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 634,
     "favoritedBy": 825,
     "shippingMin": 3,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Barbados"
   },
   {
     "id":16,
@@ -339,11 +355,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 642,
     "favoritedBy": 310,
     "shippingMin": 2,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Poland"
   },
   {
     "id":17,
@@ -361,11 +378,12 @@ const data = [
     "giftMessage":false,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 997,
     "favoritedBy": 865,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Japan"
   },
   {
     "id":18,
@@ -382,11 +400,12 @@ const data = [
     "giftMessage":true,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 103,
     "favoritedBy": 732,
     "shippingMin": 4,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Russia"
   },
   {
     "id":19,
@@ -403,11 +422,12 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 868,
     "favoritedBy": 322,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Indonesia"
   },
   {
     "id":20,
@@ -425,11 +445,12 @@ const data = [
     "giftMessage":true,
     "giftCard":false,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 300,
     "favoritedBy": 891,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Argentina"
   },
   {
     "id":21,
@@ -446,11 +467,12 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 136,
     "favoritedBy": 465,
     "shippingMin": 4,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Indonesia"
   },
   {
     "id":22,
@@ -468,11 +490,12 @@ const data = [
     "giftMessage":false,
     "giftCard":true,
     "shippingCountries": ["Australia", "Bulgaria", "Canada", "Denmark", "Finland", "Germany", "Iceland", "Ireland", "Liechtenstein", "Luxembourg", "Monaco", "New Zealand", "Norway", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    "shippingPrice": [3.43,5.52,8.6,0,2.14,1.39,8.64,0,5.41,0.64,3.27,1.52,0,0,2.09,0,0],
+    "shippingPrice": [3.43, 5.52, 8.60, 0, 2.14, 1.39, 8.64, 0, 5.41, 0.64, 3.27, 1.52, 0, 0, 2.09, 0, 0],
     "feedback": 891,
     "favoritedBy": 721,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"France"
   },
   {
     "id":23,
@@ -493,7 +516,8 @@ const data = [
     "feedback": 286,
     "favoritedBy": 340,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"United States"
   },
   {
     "id":24,
@@ -514,7 +538,8 @@ const data = [
     "feedback": 516,
     "favoritedBy": 755,
     "shippingMin": 1,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"United States"
   },
   {
     "id":25,
@@ -536,7 +561,8 @@ const data = [
     "feedback": 85,
     "favoritedBy": 215,
     "shippingMin": 1,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"United States"
   },
   {
     "id":26,
@@ -557,7 +583,8 @@ const data = [
     "feedback": 171,
     "favoritedBy": 471,
     "shippingMin": 1,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Thailand"
   },
   {
     "id":27,
@@ -579,7 +606,8 @@ const data = [
     "feedback": 980,
     "favoritedBy": 108,
     "shippingMin": 1,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Thailand"
   },
   {
     "id":28,
@@ -600,7 +628,8 @@ const data = [
     "feedback": 970,
     "favoritedBy": 383,
     "shippingMin": 2,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Thailand"
   },
   {
     "id":29,
@@ -621,7 +650,8 @@ const data = [
     "feedback": 826,
     "favoritedBy": 958,
     "shippingMin": 2,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Poland"
   },
   {
     "id":30,
@@ -643,7 +673,8 @@ const data = [
     "feedback": 667,
     "favoritedBy": 651,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Poland"
   },
   {
     "id":31,
@@ -665,7 +696,8 @@ const data = [
     "feedback": 587,
     "favoritedBy": 89,
     "shippingMin": 1,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Poland"
   },
   {
     "id":32,
@@ -687,7 +719,8 @@ const data = [
     "feedback": 747,
     "favoritedBy": 599,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Malawi"
   },
   {
     "id":33,
@@ -708,7 +741,8 @@ const data = [
     "feedback": 258,
     "favoritedBy": 143,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Malawi"
   },
   {
     "id":34,
@@ -729,7 +763,8 @@ const data = [
     "feedback": 717,
     "favoritedBy": 943,
     "shippingMin": 1,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"China"
   },
   {
     "id":35,
@@ -751,7 +786,8 @@ const data = [
     "feedback": 897,
     "favoritedBy": 77,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"China"
   },
   {
     "id":36,
@@ -772,7 +808,8 @@ const data = [
     "feedback": 795,
     "favoritedBy": 346,
     "shippingMin": 2,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Japan"
   },
   {
     "id":37,
@@ -793,7 +830,8 @@ const data = [
     "feedback": 386,
     "favoritedBy": 949,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Japan"
   },
   {
     "id":38,
@@ -815,7 +853,8 @@ const data = [
     "feedback": 474,
     "favoritedBy": 792,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Japan"
   },
   {
     "id":39,
@@ -837,7 +876,8 @@ const data = [
     "feedback": 421,
     "favoritedBy": 801,
     "shippingMin": 1,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Poland"
   },
   {
     "id":40,
@@ -859,7 +899,8 @@ const data = [
     "feedback": 596,
     "favoritedBy": 798,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Poland"
   },
   {
     "id":41,
@@ -881,7 +922,8 @@ const data = [
     "feedback": 900,
     "favoritedBy": 75,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Bangladesh"
   },
   {
     "id":42,
@@ -903,7 +945,8 @@ const data = [
     "feedback": 656,
     "favoritedBy": 90,
     "shippingMin": 2,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Bangladesh"
   },
   {
     "id":43,
@@ -925,7 +968,8 @@ const data = [
     "feedback": 669,
     "favoritedBy": 756,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Bangladesh"
   },
   {
     "id":44,
@@ -947,7 +991,8 @@ const data = [
     "feedback": 410,
     "favoritedBy": 621,
     "shippingMin": 3,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Mali"
   },
   {
     "id":45,
@@ -968,7 +1013,8 @@ const data = [
     "feedback": 288,
     "favoritedBy": 149,
     "shippingMin": 2,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Mali"
   },
   {
     "id":46,
@@ -989,7 +1035,8 @@ const data = [
     "feedback": 738,
     "favoritedBy": 524,
     "shippingMin": 3,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Mali"
   },
   {
     "id":47,
@@ -1011,7 +1058,8 @@ const data = [
     "feedback": 198,
     "favoritedBy": 376,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Taiwan"
   },
   {
     "id":48,
@@ -1033,7 +1081,8 @@ const data = [
     "feedback": 884,
     "favoritedBy": 309,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Taiwan"
   },
   {
     "id":49,
@@ -1054,7 +1103,8 @@ const data = [
     "feedback": 454,
     "favoritedBy": 438,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Taiwan"
   },
   {
     "id":50,
@@ -1075,7 +1125,8 @@ const data = [
     "feedback": 292,
     "favoritedBy": 632,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Czech Republic"
   },
   {
     "id":51,
@@ -1096,7 +1147,8 @@ const data = [
     "feedback": 72,
     "favoritedBy": 785,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Czech Republic"
   },
   {
     "id":52,
@@ -1117,7 +1169,8 @@ const data = [
     "feedback": 470,
     "favoritedBy": 266,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Czech Republic"
   },
   {
     "id":53,
@@ -1139,7 +1192,8 @@ const data = [
     "feedback": 232,
     "favoritedBy": 74,
     "shippingMin": 1,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Philippines"
   },
   {
     "id":54,
@@ -1160,7 +1214,8 @@ const data = [
     "feedback": 50,
     "favoritedBy": 979,
     "shippingMin": 2,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Philippines"
   },
   {
     "id":55,
@@ -1181,7 +1236,8 @@ const data = [
     "feedback": 168,
     "favoritedBy": 383,
     "shippingMin": 1,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Philippines"
   },
   {
     "id":56,
@@ -1203,7 +1259,8 @@ const data = [
     "feedback": 996,
     "favoritedBy": 285,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Spain"
   },
   {
     "id":57,
@@ -1224,7 +1281,8 @@ const data = [
     "feedback": 550,
     "favoritedBy": 712,
     "shippingMin": 4,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Spain"
   },
   {
     "id":58,
@@ -1246,7 +1304,8 @@ const data = [
     "feedback": 839,
     "favoritedBy": 274,
     "shippingMin": 3,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Spain"
   },
   {
     "id":59,
@@ -1268,7 +1327,8 @@ const data = [
     "feedback": 626,
     "favoritedBy": 806,
     "shippingMin": 1,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Russia"
   },
   {
     "id":60,
@@ -1290,7 +1350,8 @@ const data = [
     "feedback": 147,
     "favoritedBy": 237,
     "shippingMin": 4,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Russia"
   },
   {
     "id":61,
@@ -1311,7 +1372,8 @@ const data = [
     "feedback": 278,
     "favoritedBy": 73,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Russia"
   },
   {
     "id":62,
@@ -1332,7 +1394,8 @@ const data = [
     "feedback": 900,
     "favoritedBy": 234,
     "shippingMin": 2,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"South Korea"
   },
   {
     "id":63,
@@ -1354,7 +1417,8 @@ const data = [
     "feedback": 82,
     "favoritedBy": 532,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"South Korea"
   },
   {
     "id":64,
@@ -1376,7 +1440,8 @@ const data = [
     "feedback": 560,
     "favoritedBy": 711,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"South Korea"
   },
   {
     "id":65,
@@ -1398,7 +1463,8 @@ const data = [
     "feedback": 757,
     "favoritedBy": 109,
     "shippingMin": 4,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Serbia"
   },
   {
     "id":66,
@@ -1419,7 +1485,8 @@ const data = [
     "feedback": 475,
     "favoritedBy": 647,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Serbia"
   },
   {
     "id":67,
@@ -1441,7 +1508,8 @@ const data = [
     "feedback": 189,
     "favoritedBy": 251,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Serbia"
   },
   {
     "id":68,
@@ -1463,7 +1531,8 @@ const data = [
     "feedback": 403,
     "favoritedBy": 44,
     "shippingMin": 4,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Japan"
   },
   {
     "id":69,
@@ -1484,7 +1553,8 @@ const data = [
     "feedback": 170,
     "favoritedBy": 383,
     "shippingMin": 2,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Japan"
   },
   {
     "id":70,
@@ -1505,7 +1575,8 @@ const data = [
     "feedback": 416,
     "favoritedBy": 15,
     "shippingMin": 4,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Japan"
   },
   {
     "id":71,
@@ -1527,7 +1598,8 @@ const data = [
     "feedback": 634,
     "favoritedBy": 322,
     "shippingMin": 1,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Malaysia"
   },
   {
     "id":72,
@@ -1549,7 +1621,8 @@ const data = [
     "feedback": 201,
     "favoritedBy": 54,
     "shippingMin": 2,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Malaysia"
   },
   {
     "id":73,
@@ -1571,7 +1644,8 @@ const data = [
     "feedback": 832,
     "favoritedBy": 79,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Malaysia"
   },
   {
     "id":74,
@@ -1593,7 +1667,8 @@ const data = [
     "feedback": 794,
     "favoritedBy": 480,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Ethiopia"
   },
   {
     "id":75,
@@ -1614,7 +1689,8 @@ const data = [
     "feedback": 821,
     "favoritedBy": 245,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Ethiopia"
   },
   {
     "id":76,
@@ -1636,7 +1712,8 @@ const data = [
     "feedback": 368,
     "favoritedBy": 269,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Ethiopia"
   },
   {
     "id":77,
@@ -1657,7 +1734,8 @@ const data = [
     "feedback": 841,
     "favoritedBy": 307,
     "shippingMin": 2,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Sri Lanka"
   },
   {
     "id":78,
@@ -1678,7 +1756,8 @@ const data = [
     "feedback": 522,
     "favoritedBy": 206,
     "shippingMin": 1,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Sri Lanka"
   },
   {
     "id":79,
@@ -1699,7 +1778,8 @@ const data = [
     "feedback": 853,
     "favoritedBy": 902,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Sri Lanka"
   },
   {
     "id":80,
@@ -1720,7 +1800,8 @@ const data = [
     "feedback": 626,
     "favoritedBy": 963,
     "shippingMin": 2,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Iceland"
   },
   {
     "id":81,
@@ -1741,7 +1822,8 @@ const data = [
     "feedback": 121,
     "favoritedBy": 122,
     "shippingMin": 3,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Iceland"
   },
   {
     "id":82,
@@ -1762,7 +1844,8 @@ const data = [
     "feedback": 25,
     "favoritedBy": 546,
     "shippingMin": 4,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Iceland"
   },
   {
     "id":83,
@@ -1784,7 +1867,8 @@ const data = [
     "feedback": 266,
     "favoritedBy": 970,
     "shippingMin": 1,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"Peru"
   },
   {
     "id":84,
@@ -1806,7 +1890,8 @@ const data = [
     "feedback": 115,
     "favoritedBy": 973,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Peru"
   },
   {
     "id":85,
@@ -1828,7 +1913,8 @@ const data = [
     "feedback": 465,
     "favoritedBy": 92,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Peru"
   },
   {
     "id":86,
@@ -1849,7 +1935,8 @@ const data = [
     "feedback": 69,
     "favoritedBy": 317,
     "shippingMin": 3,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Panama"
   },
   {
     "id":87,
@@ -1871,7 +1958,8 @@ const data = [
     "feedback": 454,
     "favoritedBy": 665,
     "shippingMin": 3,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Panama"
   },
   {
     "id":88,
@@ -1892,7 +1980,8 @@ const data = [
     "feedback": 221,
     "favoritedBy": 727,
     "shippingMin": 1,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Panama"
   },
   {
     "id":89,
@@ -1914,7 +2003,8 @@ const data = [
     "feedback": 444,
     "favoritedBy": 242,
     "shippingMin": 1,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Costa Rica"
   },
   {
     "id":90,
@@ -1935,7 +2025,8 @@ const data = [
     "feedback": 790,
     "favoritedBy": 711,
     "shippingMin": 2,
-    "shippingMax": 9
+    "shippingMax": 9,
+    "shopLocation":"Costa Rica"
   },
   {
     "id":91,
@@ -1956,7 +2047,8 @@ const data = [
     "feedback": 260,
     "favoritedBy": 575,
     "shippingMin": 4,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Thailand"
   },
   {
     "id":92,
@@ -1978,7 +2070,8 @@ const data = [
     "feedback": 589,
     "favoritedBy": 137,
     "shippingMin": 3,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Thailand"
   },
   {
     "id":93,
@@ -1999,7 +2092,8 @@ const data = [
     "feedback": 682,
     "favoritedBy": 295,
     "shippingMin": 4,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"Uruguay"
   },
   {
     "id":94,
@@ -2020,7 +2114,8 @@ const data = [
     "feedback": 203,
     "favoritedBy": 755,
     "shippingMin": 3,
-    "shippingMax": 7
+    "shippingMax": 7,
+    "shopLocation":"Uruguay"
   },
   {
     "id":95,
@@ -2041,7 +2136,8 @@ const data = [
     "feedback": 711,
     "favoritedBy": 736,
     "shippingMin": 3,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Brazil"
   },
   {
     "id":96,
@@ -2063,7 +2159,8 @@ const data = [
     "feedback": 48,
     "favoritedBy": 632,
     "shippingMin": 2,
-    "shippingMax": 5
+    "shippingMax": 5,
+    "shopLocation":"Brazil"
   },
   {
     "id":97,
@@ -2085,7 +2182,8 @@ const data = [
     "feedback": 197,
     "favoritedBy": 204,
     "shippingMin": 4,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Barbados"
   },
   {
     "id":98,
@@ -2107,7 +2205,8 @@ const data = [
     "feedback": 152,
     "favoritedBy": 146,
     "shippingMin": 2,
-    "shippingMax": 6
+    "shippingMax": 6,
+    "shopLocation":"Barbados"
   },
   {
     "id":99,
@@ -2129,7 +2228,8 @@ const data = [
     "feedback": 523,
     "favoritedBy": 674,
     "shippingMin": 3,
-    "shippingMax": 8
+    "shippingMax": 8,
+    "shopLocation":"United States"
   },
   {
     "id":100,
@@ -2150,7 +2250,8 @@ const data = [
     "feedback": 903,
     "favoritedBy": 332,
     "shippingMin": 3,
-    "shippingMax": 10
+    "shippingMax": 10,
+    "shopLocation":"United States"
   }
 ];
 

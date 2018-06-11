@@ -35,10 +35,6 @@ class Details extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  getRandomInt(max) {
-    return Math.floor(Math.random() * max + 2);
-  }
-
   showModal(name) {
     if (this.state.option !== 'unselected') {
       if (name === 'buy-it-now') {
@@ -82,6 +78,9 @@ class Details extends React.Component {
       name,
       options,
       quantity,
+      wantNumber,
+      currentCountry,
+      currentShippingPrice,
     } = this.props;
 
     const quantityArray = [];
@@ -108,10 +107,26 @@ class Details extends React.Component {
       }
     }
 
+    let taxInfo;
+    const noTaxDisplay = ['United States', 'Canada'];
+    const vatDisplay = ['European Union', 'Belarus', 'Iceland', 'India', 'New Zealand', 'Norway', 'Russia', 'Serbia', 'South Africa', 'South Korea', 'Taiwan', 'Turkey', 'Switzerland', 'United Arab Emirates'];
+    const gstDisplay = ['Australia', 'New Zealand'];
+    if (noTaxDisplay.includes(currentCountry)) {
+      taxInfo = null;
+    } else if (vatDisplay.includes(currentCountry)) {
+      taxInfo = 'VAT included (where applicable)';
+    } else if (gstDisplay.includes(currentCountry)) {
+      taxInfo = 'GST included (where applicable)';
+    } else {
+      taxInfo = 'Local taxes included (where applicable)';
+    }
+
     return (
       <div>
         <h1>{name}</h1>
         <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
+        <SmallerGreyText>{taxInfo}</SmallerGreyText>
+        <SmallerGreyText>{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</SmallerGreyText>
         <div>{options.name}</div>
         <select
           className="form-control"
@@ -155,10 +170,10 @@ class Details extends React.Component {
             <hr />
             <div><p><strong>Order summary</strong></p></div>
             <Flex><span>Item(s) total</span><span>${shownPrice}</span></Flex>
-            <Flex><span>Shipping</span><span>SHIPPING PRICE HERE</span></Flex>
-            <SmallerText>(To COUNTRY HERE)</SmallerText>
+            <Flex><span>Shipping</span><span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span></Flex>
+            <SmallerText>(To {currentCountry})</SmallerText>
             <hr />
-            <Flex><span><strong>Total</strong></span><span><strong>${shownPrice}</strong></span></Flex>
+            <Flex><span><strong>Total</strong></span><span><strong>${currentShippingPrice !== 'Free' ? +shownPrice + +currentShippingPrice : shownPrice}</strong></span></Flex>
             <SmallerGreyText>Additional duties and taxes <a href="https://www.etsy.com/help/article/5023">may apply</a></SmallerGreyText>
             <div><center><button type="button" className="btn btn-secondary">Proceed to checkout</button></center></div>
           </Modal>
@@ -177,7 +192,7 @@ class Details extends React.Component {
           </Modal>
         </div>
         <div>
-          Other people want this. {this.getRandomInt(20)} people have this in their carts right now.
+          Other people want this. {wantNumber} people have this in their carts right now.
         </div>
       </div>
     );

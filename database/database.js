@@ -25,6 +25,7 @@ const detailsSchema = mongoose.Schema({
   favoritedBy: Number,
   shippingMin: Number,
   shippingMax: Number,
+  shopLocation: String,
 });
 
 const Product = mongoose.model('Product', detailsSchema);
