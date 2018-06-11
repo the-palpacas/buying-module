@@ -8,7 +8,7 @@ const SmallerGreyText = styled.div`
 
 const CountryClickableText = styled.span`
   text-decoration: underline;
-  color: grey;
+  color: #;
   cursor: pointer;
 `;
 
@@ -43,11 +43,13 @@ class Shipping extends React.Component {
 
 
       <div>
-        <h4>Shipping & returns</h4>
+        <h5>Shipping &amp; returns</h5>
         <div>
-          <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong><br />
-          From {shopLocation}<br />
-          {currentShippingPrice === 'Free' ? currentShippingPrice : `$${currentShippingPrice}`} shipping to <CountryClickableText onClick={this.handleCountryClick}>{currentCountry}</CountryClickableText><br />
+          <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong>
+          <br />
+          From {shopLocation}
+          <br />
+          {currentShippingPrice === 'Free' ? currentShippingPrice : `$${currentShippingPrice}`} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick}><u>{currentCountry}</u></a><br />
           {this.state.showCountrySelect ?
             <select
               className="form-control"
@@ -63,8 +65,9 @@ class Shipping extends React.Component {
           <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText><br />
         </div>
         <div>
-          <strong>Returns and exchanges accepted</strong><br />
-          Exceptions may apply. See return policy.
+          <strong>Returns and exchanges accepted</strong>
+          <br />
+          Exceptions may apply. <a href="javascript:void(0)"><u>See return policy</u></a>.
         </div>
       </div>
     );

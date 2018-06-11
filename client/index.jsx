@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
 import Overview from './components/Overview.jsx';
 import Shipping from './components/Shipping.jsx';
+import styled from 'styled-components';
 
 const axios = require('axios');
 
