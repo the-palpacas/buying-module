@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
 import Overview from './components/Overview.jsx';
 import Shipping from './components/Shipping.jsx';
+import './styles.css';
 
 const axios = require('axios');
 
@@ -39,7 +40,7 @@ class BuyingModule extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`${window.location.pathname}details`)
+    axios.get(`http://localhost:8000${window.location.pathname}details`)
       .then((response) => {
         this.setState({
           favoritedBy: response.data[0].favoritedBy,
