@@ -123,7 +123,7 @@ class Details extends React.Component {
     }
 
     return (
-      <div>
+      <div className="product-details">
         <h3>{name}</h3>
         <h4>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h4>
         <SmallerGreyText>{taxInfo}</SmallerGreyText>
