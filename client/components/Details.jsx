@@ -41,16 +41,22 @@ const Header3 = styled.h3`
 `;
 
 const ImgCart = styled.img`
-  max-width: 15%;
-  max-height: 15%;
+  max-width: 60px;
+  max-height: 60px;
   vertical-align: middle;
   float: left;
   padding: 0 15px;
 `;
 
 const Img = styled.img`
-  max-width: ${props => props.CC ? '40%' : '12%'};
-  max-height: ${props => props.CC ? '40%' : '12%'};
+  width: ${props => props.CC ? '40%' : '12%'};
+  height: ${props => props.CC ? '40%' : '12%'};
+  vertical-align: middle;
+`;
+
+const ImgLarge = styled.img`
+  max-width: 800px;
+  height: auto;
   vertical-align: middle;
 `;
 
@@ -247,13 +253,14 @@ class Details extends React.Component {
               <Header3>Choose your payment method</Header3>
               <form>
                 <input type="radio" value="cc" name="payment" />
-                <Img CC
+                <Img
+                  CC
                   src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
                   alt="credit-card"
                 />
                 <br />
                 <input type="radio" value="paypal" name="payment" />
-                <Img 
+                <Img
                   src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
                   alt="paypal"
                 />
@@ -304,13 +311,10 @@ class Details extends React.Component {
           Add to cart
           </Button>
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
-            <h5>
-              <img
-                src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
-                alt="cart-placeholder"
-                className="img-fluid"
-              />
-            </h5>
+            <ImgLarge
+              src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
+              alt="cart-placeholder"
+            />
           </Modal>
         </div>
         <CartDiv>
