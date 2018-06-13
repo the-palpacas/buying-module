@@ -20,4 +20,4 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-public/dist/bundle.js
+public/dist/buying.js
