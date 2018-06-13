@@ -10,15 +10,26 @@ const Link = styled.a`
   }
 `;
 
+const Img = styled.img`
+  max-width: 6%;
+  max-height: 6%;
+  vertical-align: middle;
+  float: left;
+  padding: 0 5px;
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 3px;
+`;
+
 const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feedback, favoritedBy}) => {
   const showGiftCard = () => {
     if (giftCard) {
       return (
         <div>
-          <img
+          <Img
             src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-gift.png"
             alt="petsy-gift"
-            className="img-gift float-left"
           />
           This shop accepts Etsy gift cards
         </div>);
@@ -28,14 +39,14 @@ const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feed
 
   return (
     <div>
-      <h5>Overview</h5>
+      <h3>Overview</h3>
       <ul>
-        {handmade ? <li>Handmade item</li> : null}
-        {madeToOrder ? <li>Made to order</li> : null}
-        {materials ? <li>Materials: {materials}</li> : null}
-        <li>Feedback: <Link href="javascript:void(0)">{feedback} reviews</Link></li>
-        <li>Favorited by: <Link href="javascript:void(0)">{favoritedBy} people</Link></li>
-        {giftMessage ? <li>Gift message available</li> : null}
+        {handmade ? <ListItem>Handmade item</ListItem> : null}
+        {madeToOrder ? <ListItem>Made to order</ListItem> : null}
+        {materials ? <ListItem>Materials: {materials}</ListItem> : null}
+        <ListItem>Feedback: <Link href="javascript:void(0)">{feedback} reviews</Link></ListItem>
+        <ListItem>Favorited by: <Link href="javascript:void(0)">{favoritedBy} people</Link></ListItem>
+        {giftMessage ? <ListItem>Gift message available</ListItem> : null}
       </ul>
       {showGiftCard()}
     </div>
