@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 import Details from './components/Details.jsx';
 import Overview from './components/Overview.jsx';
 import Shipping from './components/Shipping.jsx';
-import './styles.css';
+import styled from 'styled-components';
 
 const axios = require('axios');
+
+const Wrapper = styled.div`
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 392px;
+`;
 
 class BuyingModule extends React.Component {
   constructor(props) {
@@ -88,7 +95,7 @@ class BuyingModule extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <Wrapper>
         <Details
           name={this.state.name}
           options={this.state.options}
@@ -120,7 +127,7 @@ class BuyingModule extends React.Component {
           currentShippingPrice={this.state.currentShippingPrice}
           handleSelectCountry={this.handleSelectCountry}
         />
-      </div>
+      </Wrapper>
     );
   }
 }

@@ -1,9 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Div = styled.div`
+  margin-bottom: 5px;
+`;
+
+const Link = styled.a`
+  color: #444;
+
+  &:hover {
+    color: #666;
+    text-decoration: underline;
+  }
+`;
+
 const SmallerGreyText = styled.div`
-  font-size: 75%;
-  color: #777777;
+  font-size: 80%;
+  color: #777;
   margin-bottom: 20px;
 `;
 
@@ -60,28 +73,28 @@ class Shipping extends React.Component {
     };
 
     return (
-      <div>
-        <h5>Shipping &amp; returns</h5>
-        <div>
+      <Div>
+        <h3>Shipping &amp; returns</h3>
+        <Div>
           <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong>
-        </div>
-        <div>
+        </Div>
+        <Div>
           From {shopLocation}
-        </div>
-        <div>
-          {renderShipping()} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick}><u>{currentCountry}</u></a><br />
+        </Div>
+        <Div>
+          {renderShipping()} shipping to <Link href="javascript:void(0)" onClick={this.handleCountryClick}><u>{currentCountry}</u></Link><br />
           {showCountryDropdown()}
-        </div>
-        <div>
+        </Div>
+        <Div>
           <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText>
-        </div>
-        <div>
+        </Div>
+        <Div>
           <strong>Returns and exchanges accepted</strong>
-        </div>
-        <div>
-          Exceptions may apply. <a href="javascript:void(0)"><u>See return policy</u></a>.
-        </div>
-      </div>
+        </Div>
+        <Div>
+          Exceptions may apply. <Link href="javascript:void(0)"><u>See return policy</u></Link>.
+        </Div>
+      </Div>
     );
   }
 }
