@@ -1,6 +1,6 @@
 # Petsy - Buying Module
 
-> ender the product details, overview, and shipping information for a given product.
+> Render the product details, overview, and shipping information for a given product.
 
 ## Related Projects
 
