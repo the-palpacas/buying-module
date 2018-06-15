@@ -62,8 +62,7 @@ class Shipping extends React.Component {
           From {shopLocation}
         </div>
         <div className="shipping-div">
-          {renderShipping()} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick} className="shipping-link"><u>{currentCountry}</u>
-          </a><br />
+          {renderShipping()} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick} className="shipping-link"><u>{currentCountry}</u></a><br />
           {showCountryDropdown()}
         </div>
         <div className="shipping-div">

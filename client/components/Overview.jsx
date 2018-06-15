@@ -18,7 +18,7 @@ const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feed
 
   return (
     <div>
-      <h3 className="h3">Overview</h3>
+      <h3>Overview</h3>
       <ul>
         {handmade ? <li>Handmade item</li> : null}
         {madeToOrder ? <li>Made to order</li> : null}

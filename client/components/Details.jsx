@@ -116,7 +116,7 @@ class Details extends React.Component {
     return (
       <div>
         <h2>{name}</h2>
-        <h3 className="h3">${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h3>
+        <h3>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h3>
         <div className="smaller-text smaller-text-grey">{taxInfo}</div>
         <div className="smaller-text smaller-text-grey">{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</div>
         <div>{options.name}</div>
@@ -155,8 +155,8 @@ class Details extends React.Component {
             Buy it now &gt;
           </button>
           <Modal open={this.state.showBuyItNowModal} onClose={this.closeModal} center>
-            <div className="modal-container">
-              <h3 className="h3">Choose your payment method</h3>
+            <div id="modal">
+              <h3>Choose your payment method</h3>
               <form>
                 <input type="radio" value="cc" name="payment" />
                 <img
@@ -220,7 +220,7 @@ class Details extends React.Component {
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
             <img
               alt="checkout-placeholder"
-              className="checkout-placeholder"
+              id="checkout-placeholder"
               src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
             />
           </Modal>
