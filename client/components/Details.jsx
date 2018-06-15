@@ -115,8 +115,8 @@ class Details extends React.Component {
 
     return (
       <div>
-        <h2>{name}</h2>
-        <h3>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h3>
+        <h1>{name}</h1>
+        <h2>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h2>
         <div className="smaller-text smaller-text-grey">{taxInfo}</div>
         <div className="smaller-text smaller-text-grey">{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</div>
         <div>{options.name}</div>
@@ -162,14 +162,14 @@ class Details extends React.Component {
                 <img
                   alt="credit-card"
                   className="cc"
-                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
+                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc-resized.png"
                 />
                 <br />
                 <input type="radio" value="paypal" name="payment" />
                 <img
                   alt="paypal"
                   className="pp"
-                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
+                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal-resized.png"
                 />
                 <br />
               </form>
@@ -220,8 +220,7 @@ class Details extends React.Component {
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
             <img
               alt="checkout-placeholder"
-              id="checkout-placeholder"
-              src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
+              src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-placeholder.png"
             />
           </Modal>
         </div>
@@ -229,7 +228,7 @@ class Details extends React.Component {
           <img
             alt="shopping-cart"
             className="cart"
-            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart.png"
+            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-resized.png"
           />
         </div>
         <div className="want-text">

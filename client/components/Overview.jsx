@@ -8,7 +8,7 @@ const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feed
           <img
             alt="gift-icon"
             className="gift-icon"
-            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-gift.png"
+            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-gift-resized.png"
           />
           This shop accepts Etsy gift cards
         </div>);
