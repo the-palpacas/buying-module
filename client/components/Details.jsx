@@ -1,102 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
 import Modal from 'react-responsive-modal';
-
-const Button = styled.button`
-  background-color: ${props => props.primary ? '#F56400' : 'transparent'};
-  border: 2px solid transparent;
-  border-color: #F56400;
-  border-radius: 0.25rem;
-  color: ${props => props.primary ? '#fff' : '#F56400'};
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  padding: 0.375rem 0.75rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  vertical-align: middle;
-  width: 100%;
-
-  &:hover {
-    color: #fff;
-    background-color: ${props => props.primary ? '#FC6E0C' : '#F56400'};
-    border-color: ${props => props.primary ? '#FC6E0C' : '#F56400'};
-  }
-`;
-
-const CartDiv = styled.div`
-  margin-top: 20px;
-  margin-bottom: 30px;
-`;
-
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Header3 = styled.h3`
-  margin-bottom: 5px;
-`;
-
-const ImgCart = styled.img`
-  max-width: 60px;
-  max-height: 60px;
-  vertical-align: middle;
-  float: left;
-  padding: 0 15px;
-`;
-
-const Img = styled.img`
-  width: ${props => props.CC ? '40%' : '12%'};
-  height: ${props => props.CC ? '40%' : '12%'};
-  vertical-align: middle;
-`;
-
-const ImgLarge = styled.img`
-  max-width: 800px;
-  height: auto;
-  vertical-align: middle;
-`;
-
-const Link = styled.a`
-  color: #777;
-`;
-
-const NoOptionSelected = styled.div`
-  background-color: #F76A6A;
-  border-radius: 3px;
-  color: #FFF;
-  margin-top: -5px;
-  padding: 6px;
-`;
-
-const Select = styled.select`
-  margin-bottom: 10px;
-  height: calc(1.2rem + 2px);
-`;
-
-const SmallerText = styled.div`
-  font-size: 80%;
-`;
-
-const SmallerTextGrey = SmallerText.extend`
-  color: #777;
-  margin-bottom: 10px;
-`;
-
-const WantText = styled.div`
-  margin-top: 15px; 
-  margin-bottom: 30px; 
-`;
-
-const Wrapper = styled.div`
-  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  width: 474px;
-`;
 
 class Details extends React.Component {
   constructor(props) {
@@ -202,9 +105,9 @@ class Details extends React.Component {
     const showPleaseSelectOption = () => {
       if (this.state.buyButtonClickedWithNoOption) {
         return (
-          <NoOptionSelected>
+          <div className="no-option-selected">
             Please select {options.name.toLowerCase()}
-          </NoOptionSelected>
+          </div>
         );
       }
       return null;
@@ -213,56 +116,60 @@ class Details extends React.Component {
     return (
       <div>
         <h2>{name}</h2>
-        <Header3>${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</Header3>
-        <SmallerTextGrey>{taxInfo}</SmallerTextGrey>
-        <SmallerTextGrey>{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</SmallerTextGrey>
+        <h3 className="h3">${this.state.option === 'unselected' ? `${shownPrice}+` : shownPrice}</h3>
+        <div className="smaller-text smaller-text-grey">{taxInfo}</div>
+        <div className="smaller-text smaller-text-grey">{currentShippingPrice === 'Free' ? 'Free Shipping' : null}</div>
         <div>{options.name}</div>
         <div>
-          <Select
+          <select
+            className="select"
             name="select-options"
-            value={this.state.option}
             onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
+            value={this.state.option}
           >
             <option value="unselected">
             Select {options.name === null ? 'dimensions' : options.name.toLowerCase()}
             </option>
             {createOptionsDropdown()}
-          </Select>
+          </select>
         </div>
         {showPleaseSelectOption()}
         <div>Quantity</div>
         <div>
-          <Select
+          <select
+            className="select"
             name="select-quantity"
-            value={this.state.quantity}
             onChange={e => this.handleSelectChange(e.target.name, e.target.value)}
+            value={this.state.quantity}
           >
             {quantityArray.map(number =>
               <option value={number} key={number}>{number}</option>)}
-          </Select>
+          </select>
         </div>
         <div>
-          <Button
+          <button
+            className="button-primary-orange button-outline"
             name="buy-it-now"
             onClick={e => this.showModal(e.target.name)}
           >
             Buy it now &gt;
-          </Button>
+          </button>
           <Modal open={this.state.showBuyItNowModal} onClose={this.closeModal} center>
-            <Wrapper>
-              <Header3>Choose your payment method</Header3>
+            <div className="modal-container">
+              <h3 className="h3">Choose your payment method</h3>
               <form>
                 <input type="radio" value="cc" name="payment" />
-                <Img
-                  CC
-                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
+                <img
                   alt="credit-card"
+                  className="cc"
+                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cc.png"
                 />
                 <br />
                 <input type="radio" value="paypal" name="payment" />
-                <Img
-                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
+                <img
                   alt="paypal"
+                  className="pp"
+                  src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-paypal.png"
                 />
                 <br />
               </form>
@@ -270,62 +177,64 @@ class Details extends React.Component {
               <div>
                 <p><strong>Order summary</strong></p>
               </div>
-              <Flex>
+              <div className="flex-checkout">
                 <span>Item(s) total</span>
                 <span>${shownPrice}</span>
-              </Flex>
-              <Flex>
+              </div>
+              <div className="flex-checkout">
                 <span>Shipping</span>
                 <span>{currentShippingPrice === 'Free' ? 'Free!' : `$${currentShippingPrice}`}</span>
-              </Flex>
-              <SmallerText>(To {currentCountry})</SmallerText>
+              </div>
+              <div className="smaller-text">(To {currentCountry})</div>
               <hr />
-              <Flex>
+              <div className="flex-checkout">
                 <span>
                   <strong>Total</strong>
                 </span>
                 <span>
                   <strong>${currentShippingPrice !== 'Free' ? (+shownPrice + +currentShippingPrice).toFixed(2) : shownPrice}</strong>
                 </span>
-              </Flex>
-              <SmallerTextGrey>
+              </div>
+              <div className="smaller-text smaller-text-grey">
                 {taxInfo} <br />
-                Additional duties and taxes <Link href="https://www.etsy.com/help/article/5023">may apply</Link>.
-              </SmallerTextGrey>
+                Additional duties and taxes <a className="details-link" href="https://www.etsy.com/help/article/5023">may apply</a>.
+              </div>
               <div>
                 <center>
-                  <Button primary>
+                  <button className="button-primary-orange">
                   Proceed to checkout
-                  </Button>
+                  </button>
                 </center>
               </div>
-            </Wrapper>
+            </div>
           </Modal>
         </div>
         <div>
-          <Button
-            primary
+          <button
+            className="button-primary-orange"
             name="add-to-cart"
             onClick={e => this.showModal(e.target.name)}
           >
           Add to cart
-          </Button>
+          </button>
           <Modal open={this.state.showAddToCartModal} onClose={this.closeModal} center>
-            <ImgLarge
+            <img
+              alt="checkout-placeholder"
+              className="checkout-placeholder"
               src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart-modal-placeholder.png"
-              alt="cart-placeholder"
             />
           </Modal>
         </div>
-        <CartDiv>
-          <ImgCart
-            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart.png"
+        <div className="cart-format">
+          <img
             alt="shopping-cart"
+            className="cart"
+            src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-cart.png"
           />
-        </CartDiv>
-        <WantText>
+        </div>
+        <div className="want-text">
           <strong>Other people want this.</strong> {wantNumber} people have this in their carts right now.
-        </WantText>
+        </div>
       </div>
     );
   }

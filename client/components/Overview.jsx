@@ -1,35 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Link = styled.a`
-  color: #F56400;
-
-  &:hover {
-    color: #F56400;
-    text-decoration: underline;
-  }
-`;
-
-const Img = styled.img`
-  max-width: 6%;
-  max-height: 6%;
-  vertical-align: middle;
-  float: left;
-  padding: 0 5px;
-`;
-
-const ListItem = styled.li`
-  margin-bottom: 3px;
-`;
 
 const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feedback, favoritedBy}) => {
   const showGiftCard = () => {
     if (giftCard) {
       return (
         <div>
-          <Img
+          <img
+            alt="gift-icon"
+            className="gift-icon"
             src="https://s3-us-west-1.amazonaws.com/fec-petsy/petsy-gift.png"
-            alt="petsy-gift"
           />
           This shop accepts Etsy gift cards
         </div>);
@@ -39,14 +18,14 @@ const Overview = ({handmade, madeToOrder, materials, giftMessage, giftCard, feed
 
   return (
     <div>
-      <h3>Overview</h3>
+      <h3 className="h3">Overview</h3>
       <ul>
-        {handmade ? <ListItem>Handmade item</ListItem> : null}
-        {madeToOrder ? <ListItem>Made to order</ListItem> : null}
-        {materials ? <ListItem>Materials: {materials}</ListItem> : null}
-        <ListItem>Feedback: <Link href="javascript:void(0)">{feedback} reviews</Link></ListItem>
-        <ListItem>Favorited by: <Link href="javascript:void(0)">{favoritedBy} people</Link></ListItem>
-        {giftMessage ? <ListItem>Gift message available</ListItem> : null}
+        {handmade ? <li>Handmade item</li> : null}
+        {madeToOrder ? <li>Made to order</li> : null}
+        {materials ? <li>Materials: {materials}</li> : null}
+        <li>Feedback: <a className="overview-link" href="javascript:void(0)">{feedback} reviews</a></li>
+        <li>Favorited by: <a className="overview-link" href="javascript:void(0)">{favoritedBy} people</a></li>
+        {giftMessage ? <li>Gift message available</li> : null}
       </ul>
       {showGiftCard()}
     </div>

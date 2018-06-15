@@ -1,24 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Div = styled.div`
-  margin-bottom: 5px;
-`;
-
-const Link = styled.a`
-  color: #444;
-
-  &:hover {
-    color: #666;
-    text-decoration: underline;
-  }
-`;
-
-const SmallerGreyText = styled.div`
-  font-size: 80%;
-  color: #777;
-  margin-bottom: 20px;
-`;
 
 class Shipping extends React.Component {
   constructor(props) {
@@ -58,7 +38,7 @@ class Shipping extends React.Component {
       if (this.state.showCountrySelect) {
         return (
           <select
-            className="form-control"
+            className="select"
             name="select-country"
             onChange={e => handleSelectCountry(e.target.value)}
           >
@@ -73,28 +53,29 @@ class Shipping extends React.Component {
     };
 
     return (
-      <Div>
+      <div className="shipping-div">
         <h3>Shipping &amp; returns</h3>
-        <Div>
+        <div className="shipping-div">
           <strong>Made just for you. Ready to ship in {shippingMin}–{shippingMax} business days.</strong>
-        </Div>
-        <Div>
+        </div>
+        <div className="shipping-div">
           From {shopLocation}
-        </Div>
-        <Div>
-          {renderShipping()} shipping to <Link href="javascript:void(0)" onClick={this.handleCountryClick}><u>{currentCountry}</u></Link><br />
+        </div>
+        <div className="shipping-div">
+          {renderShipping()} shipping to <a href="javascript:void(0)" onClick={this.handleCountryClick} className="shipping-link"><u>{currentCountry}</u>
+          </a><br />
           {showCountryDropdown()}
-        </Div>
-        <Div>
-          <SmallerGreyText>Shipping upgrades available in the cart</SmallerGreyText>
-        </Div>
-        <Div>
+        </div>
+        <div className="shipping-div">
+          <div className="shipping-text">Shipping upgrades available in the cart</div>
+        </div>
+        <div className="shipping-div">
           <strong>Returns and exchanges accepted</strong>
-        </Div>
-        <Div>
-          Exceptions may apply. <Link href="javascript:void(0)"><u>See return policy</u></Link>.
-        </Div>
-      </Div>
+        </div>
+        <div className="shipping-div">
+          Exceptions may apply. <a href="javascript:void(0)" className="shipping-link"><u>See return policy</u></a>.
+        </div>
+      </div>
     );
   }
 }
