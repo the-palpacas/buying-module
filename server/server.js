@@ -4,6 +4,7 @@ const db = require('../database/database');
 const path = require('path');
 
 const app = express();
+const port = process.env.port || 8000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,7 +17,7 @@ app.use((req, res, next) => {
 
 app.use('/:id', express.static(path.resolve(__dirname, './../public')));
 
-app.listen(8000, () => console.log('Buying module listening on port 8000!'));
+app.listen(port, () => console.log(`Buying module listening on port ${port}!`));
 
 app.get('/:id/details', (req, res) => {
   db.retrieve(req.params.id, (err, result) => {
