@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+ 
 module.exports = {
   entry: [
     path.resolve(__dirname, './client/BuyingModule.jsx'),
@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "webpack -p",
-    "build-dev": "welback -d --watch",
+    "build-dev": "webpack -d --watch",
     "start": "node server/server.js",
     "start-dev": "nodemon server/server.js"
   },

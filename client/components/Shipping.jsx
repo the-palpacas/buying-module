@@ -37,16 +37,21 @@ class Shipping extends React.Component {
     const showCountryDropdown = () => {
       if (this.state.showCountrySelect) {
         return (
-          <select
-            className="select"
-            name="select-country"
-            onChange={e => handleSelectCountry(e.target.value)}
-          >
-            <option>Choose Country</option>
-            <option disabled>----------</option>
-            {shippingCountries.map(country =>
-              <option value={country} key={country}>{country}</option>)}
-          </select>
+          <div>
+            <div className="country">
+              Country
+            </div>
+            <select
+              className="select-country"
+              name="select-country"
+              onChange={e => handleSelectCountry(e.target.value)}
+            >
+              <option>Choose Country</option>
+              <option disabled>----------</option>
+              {shippingCountries.map(country =>
+                <option value={country} key={country}>{country}</option>)}
+            </select>
+          </div>
         );
       }
       return null;
