@@ -2,7 +2,7 @@ const data = require('../data.js');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://libby:petsy@petsy-details-xw1vy.mongodb.net/products');
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/products');
 
 const detailsSchema = mongoose.Schema({
   id: { type: Number, unique: true },
