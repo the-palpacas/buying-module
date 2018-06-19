@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 
+// hi mac! please review this component and others in my client folder if there is time. thank you <3 
+
 class Details extends React.Component {
   constructor(props) {
     super(props);
